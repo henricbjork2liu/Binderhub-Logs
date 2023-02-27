@@ -1,0 +1,340 @@
+Loading /etc/binderhub/config/values.yaml
+[BinderHub] WARNING | Config option `use_named_servers` not recognized by `BinderHub`.
+[W 230227 12:55:50 app:613] Generating random build token secret. Set BinderHub.build_token_secret to avoid this warning.
+[D 230227 12:55:50 selector_events:54] Using selector: EpollSelector
+[I 230227 12:55:50 app:954] BinderHub starting on port 8585
+[D 230227 12:55:50 rest:219] response body: {"kind":"PodList","apiVersion":"v1","metadata":{"resourceVersion":"2360491602"},"items":[]}
+    
+[D 230227 12:55:50 build:606] 0 build pods
+[D 230227 12:55:50 build:654] Build phase summary: {}
+[D 230227 12:55:51 auth:505] No user identified
+[D 230227 12:55:51 log:135] 200 GET /versions (@130.236.59.185) 1.33ms
+[D 230227 12:55:54 auth:505] No user identified
+[D 230227 12:55:54 log:135] 200 GET /versions (@130.236.59.185) 0.60ms
+[D 230227 12:55:59 auth:505] No user identified
+[D 230227 12:55:59 log:135] 200 GET /versions (@130.236.59.185) 0.96ms
+[D 230227 12:55:59 auth:505] No user identified
+[D 230227 12:55:59 log:135] 200 GET /versions (@130.236.59.185) 0.98ms
+[D 230227 12:56:04 auth:505] No user identified
+[D 230227 12:56:04 log:135] 200 GET /versions (@130.236.59.185) 0.95ms
+[D 230227 12:56:04 auth:505] No user identified
+[D 230227 12:56:04 log:135] 200 GET /versions (@130.236.59.185) 1.00ms
+[D 230227 12:56:09 auth:505] No user identified
+[D 230227 12:56:09 log:135] 200 GET /versions (@130.236.59.185) 0.90ms
+[D 230227 12:56:09 auth:505] No user identified
+[D 230227 12:56:09 log:135] 200 GET /versions (@130.236.59.185) 0.99ms
+[D 230227 12:56:14 auth:505] No user identified
+[D 230227 12:56:14 log:135] 200 GET /versions (@130.236.59.185) 0.94ms
+[D 230227 12:56:14 auth:505] No user identified
+[D 230227 12:56:14 log:135] 200 GET /versions (@130.236.59.185) 1.00ms
+[D 230227 12:56:19 auth:505] No user identified
+[D 230227 12:56:19 log:135] 200 GET /versions (@130.236.59.185) 0.95ms
+[D 230227 12:56:19 auth:505] No user identified
+[D 230227 12:56:19 log:135] 200 GET /versions (@130.236.59.185) 1.07ms
+[D 230227 12:56:24 auth:505] No user identified
+[D 230227 12:56:24 log:135] 200 GET /versions (@130.236.59.185) 1.14ms
+[D 230227 12:56:24 auth:505] No user identified
+[D 230227 12:56:24 log:135] 200 GET /versions (@130.236.59.185) 1.26ms
+[D 230227 12:56:29 auth:505] No user identified
+[D 230227 12:56:29 log:135] 200 GET /versions (@130.236.59.185) 1.15ms
+[D 230227 12:56:29 auth:505] No user identified
+[D 230227 12:56:29 log:135] 200 GET /versions (@130.236.59.185) 1.36ms
+[D 230227 12:56:34 auth:505] No user identified
+[D 230227 12:56:34 log:135] 200 GET /versions (@130.236.59.185) 0.94ms
+[D 230227 12:56:34 auth:505] No user identified
+[D 230227 12:56:34 log:135] 200 GET /versions (@130.236.59.185) 1.04ms
+[D 230227 12:56:39 auth:505] No user identified
+[D 230227 12:56:39 log:135] 200 GET /versions (@130.236.59.185) 0.88ms
+[D 230227 12:56:39 auth:505] No user identified
+[D 230227 12:56:39 log:135] 200 GET /versions (@130.236.59.185) 1.00ms
+[D 230227 12:56:42 auth:505] No user identified
+[D 230227 12:56:42 log:135] 200 GET /metrics (@10.65.202.13) 1.22ms
+[D 230227 12:56:42 auth:310] HubAuth cache miss: token::17c6277d02b649dc87c8c98fd12bbc16
+[D 230227 12:56:43 auth:316] Received request from Hub user {'kind': 'user', 'name': 'henbj71@liu.se', 'admin': False, 'groups': [], 'server': None, 'pending': None, 'created': '2023-02-27T12:56:29.098979Z', 'last_activity': '2023-02-27T12:56:42.689374Z', 'servers': None}
+[D 230227 12:56:43 auth:863] Allowing Hub user henbj71@liu.se (all Hub users and services allowed)
+[D 230227 12:56:43 auth:748] Setting oauth cookie for 130.236.18.90: 6174f8e6-ac97-470c-b0ae-001d079c0b3a, {'path': '/', 'httponly': True, 'secure': True}
+[D 230227 12:56:43 base:75] No build token for git/https%3A%2F%2Fgitlab.liu.se%2Foskho10%2Fete335-binder/HEAD
+[I 230227 12:56:43 registry:113] Loading docker config /root/.docker/config.json
+[D 230227 12:56:43 rest:219] response body: {"kind":"Pod","apiVersion":"v1","metadata":{"name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2","namespace":"henbj71-binderhub","uid":"1f530abd-892f-48dd-9ca3-1766a6e07f68","resourceVersion":"2360492312","creationTimestamp":"2023-02-27T12:56:43Z","labels":{"component":"binderhub-build","name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2"},"annotations":{"binder-repo":"https://gitlab.liu.se/oskho10/ete335-binder","kubernetes.io/limit-ranger":"LimitRanger plugin set: cpu request for container builder; cpu limit for container builder"},"managedFields":[{"manager":"Swagger-Codegen","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:56:43Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:binder-repo":{}},"f:labels":{".":{},"f:component":{},"f:name":{}}},"f:spec":{"f:affinity":{".":{},"f:podAntiAffinity":{".":{},"f:preferredDuringSchedulingIgnoredDuringExecution":{}}},"f:containers":{"k:{\"name\":\"builder\"}":{".":{},"f:args":{},"f:image":{},"f:imagePullPolicy":{},"f:name":{},"f:resources":{".":{},"f:limits":{".":{},"f:memory":{}},"f:requests":{".":{},"f:memory":{}}},"f:terminationMessagePath":{},"f:terminationMessagePolicy":{},"f:volumeMounts":{".":{},"k:{\"mountPath\":\"/root/.docker\"}":{".":{},"f:mountPath":{},"f:name":{}},"k:{\"mountPath\":\"/var/run/docker.sock\"}":{".":{},"f:mountPath":{},"f:name":{}}}}},"f:dnsPolicy":{},"f:enableServiceLinks":{},"f:restartPolicy":{},"f:schedulerName":{},"f:securityContext":{},"f:terminationGracePeriodSeconds":{},"f:tolerations":{},"f:volumes":{".":{},"k:{\"name\":\"docker-config\"}":{".":{},"f:name":{},"f:secret":{".":{},"f:defaultMode":{},"f:secretName":{}}},"k:{\"name\":\"docker-socket\"}":{".":{},"f:hostPath":{".":{},"f:path":{},"f:type":{}},"f:name":{}}}}}}]},"spec":{"volumes":[{"name":"docker-socket","hostPath":{"path":"/var/run/dind/henbj71/docker.sock","type":"Socket"}},{"name":"docker-config","secret":{"secretName":"binder-build-docker-config","defaultMode":420}},{"name":"kube-api-access-wnwc4","projected":{"sources":[{"serviceAccountToken":{"expirationSeconds":3607,"path":"token"}},{"configMap":{"name":"kube-root-ca.crt","items":[{"key":"ca.crt","path":"ca.crt"}]}},{"downwardAPI":{"items":[{"path":"namespace","fieldRef":{"apiVersion":"v1","fieldPath":"metadata.namespace"}}]}}],"defaultMode":420}}],"containers":[{"name":"builder","image":"quay.io/jupyterhub/repo2docker:2022.02.0","args":["jupyter-repo2docker","--ref=270a0e16ebe3c00439b72abac0f825ac3ae1809c","--image=gitlab.it.liu.se:5000/drs/binderhub/prod-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2fete335-2dbinder-768a06:270a0e16ebe3c00439b72abac0f825ac3ae1809c","--no-clean","--no-run","--json-logs","--user-name=jovyan","--user-id=1000","--push","https://gitlab.liu.se/oskho10/ete335-binder"],"resources":{"limits":{"cpu":"24","memory":"0"},"requests":{"cpu":"50m","memory":"0"}},"volumeMounts":[{"name":"docker-socket","mountPath":"/var/run/docker.sock"},{"name":"docker-config","mountPath":"/root/.docker"},{"name":"kube-api-access-wnwc4","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","imagePullPolicy":"IfNotPresent"}],"restartPolicy":"Never","terminationGracePeriodSeconds":30,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","securityContext":{},"imagePullSecrets":[{"name":"liubinderhub-secret"}],"affinity":{"podAntiAffinity":{"preferredDuringSchedulingIgnoredDuringExecution":[{"weight":100,"podAffinityTerm":{"labelSelector":{"matchLabels":{"component":"binderhub-build"}},"topologyKey":"kubernetes.io/hostname"}}]}},"schedulerName":"default-scheduler","tolerations":[{"key":"hub.jupyter.org/dedicated","operator":"Equal","value":"user","effect":"NoSchedule"},{"key":"hub.jupyter.org_dedicated","operator":"Equal","value":"user","effect":"NoSchedule"},{"key":"node.kubernetes.io/not-ready","operator":"Exists","effect":"NoExecute","tolerationSeconds":300},{"key":"node.kubernetes.io/unreachable","operator":"Exists","effect":"NoExecute","tolerationSeconds":300}],"priority":0,"enableServiceLinks":true,"preemptionPolicy":"PreemptLowerPriority"},"status":{"phase":"Pending","qosClass":"Burstable"}}
+    
+[I 230227 12:56:43 build:449] Started build build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2
+[I 230227 12:56:43 build:451] Watching build pod build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2
+[I 230227 12:56:44 build:522] Watching logs of build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2
+[D 230227 12:56:44 auth:505] No user identified
+[D 230227 12:56:44 log:135] 200 GET /versions (@130.236.59.185) 1.11ms
+[D 230227 12:56:44 auth:505] No user identified
+[D 230227 12:56:44 log:135] 200 GET /versions (@130.236.59.185) 1.15ms
+[D 230227 12:56:49 auth:505] No user identified
+[D 230227 12:56:49 log:135] 200 GET /versions (@130.236.59.185) 1.57ms
+[D 230227 12:56:49 auth:505] No user identified
+[D 230227 12:56:49 log:135] 200 GET /versions (@130.236.59.185) 1.64ms
+[D 230227 12:56:50 rest:219] response body: {"kind":"PodList","apiVersion":"v1","metadata":{"resourceVersion":"2360492426"},"items":[{"metadata":{"name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2","namespace":"henbj71-binderhub","uid":"1f530abd-892f-48dd-9ca3-1766a6e07f68","resourceVersion":"2360492341","creationTimestamp":"2023-02-27T12:56:43Z","labels":{"component":"binderhub-build","name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2"},"annotations":{"binder-repo":"https://gitlab.liu.se/oskho10/ete335-binder","cni.projectcalico.org/containerID":"e6bb8de8b8c353534a7b7100e7591a17c8622a20415b6be199d83344c4bf4a70","cni.projectcalico.org/podIP":"10.65.194.15/32","cni.projectcalico.org/podIPs":"10.65.194.15/32,fd03:2b4f:588e:0:9e49:804f:3825:84c1/128","k8s.v1.cni.cncf.io/network-status":"[{\n    \"name\": \"k8s-pod-network\",\n    \"ips\": [\n        \"10.65.194.15\",\n        \"fd03:2b4f:588e:0:9e49:804f:3825:84c1\"\n    ],\n    \"default\": true,\n    \"dns\": {}\n}]","k8s.v1.cni.cncf.io/networks-status":"[{\n    \"name\": \"k8s-pod-network\",\n    \"ips\": [\n        \"10.65.194.15\",\n        \"fd03:2b4f:588e:0:9e49:804f:3825:84c1\"\n    ],\n    \"default\": true,\n    \"dns\": {}\n}]","kubernetes.io/limit-ranger":"LimitRanger plugin set: cpu request for container builder; cpu limit for container builder"},"managedFields":[{"manager":"Swagger-Codegen","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:56:43Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:binder-repo":{}},"f:labels":{".":{},"f:component":{},"f:name":{}}},"f:spec":{"f:affinity":{".":{},"f:podAntiAffinity":{".":{},"f:preferredDuringSchedulingIgnoredDuringExecution":{}}},"f:containers":{"k:{\"name\":\"builder\"}":{".":{},"f:args":{},"f:image":{},"f:imagePullPolicy":{},"f:name":{},"f:resources":{".":{},"f:limits":{".":{},"f:memory":{}},"f:requests":{".":{},"f:memory":{}}},"f:terminationMessagePath":{},"f:terminationMessagePolicy":{},"f:volumeMounts":{".":{},"k:{\"mountPath\":\"/root/.docker\"}":{".":{},"f:mountPath":{},"f:name":{}},"k:{\"mountPath\":\"/var/run/docker.sock\"}":{".":{},"f:mountPath":{},"f:name":{}}}}},"f:dnsPolicy":{},"f:enableServiceLinks":{},"f:restartPolicy":{},"f:schedulerName":{},"f:securityContext":{},"f:terminationGracePeriodSeconds":{},"f:tolerations":{},"f:volumes":{".":{},"k:{\"name\":\"docker-config\"}":{".":{},"f:name":{},"f:secret":{".":{},"f:defaultMode":{},"f:secretName":{}}},"k:{\"name\":\"docker-socket\"}":{".":{},"f:hostPath":{".":{},"f:path":{},"f:type":{}},"f:name":{}}}}}},{"manager":"calico","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:56:44Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{"f:cni.projectcalico.org/containerID":{},"f:cni.projectcalico.org/podIP":{},"f:cni.projectcalico.org/podIPs":{}}}},"subresource":"status"},{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:56:44Z","fieldsType":"FieldsV1","fieldsV1":{"f:status":{"f:conditions":{"k:{\"type\":\"ContainersReady\"}":{".":{},"f:lastProbeTime":{},"f:lastTransitionTime":{},"f:status":{},"f:type":{}},"k:{\"type\":\"Initialized\"}":{".":{},"f:lastProbeTime":{},"f:lastTransitionTime":{},"f:status":{},"f:type":{}},"k:{\"type\":\"Ready\"}":{".":{},"f:lastProbeTime":{},"f:lastTransitionTime":{},"f:status":{},"f:type":{}}},"f:containerStatuses":{},"f:hostIP":{},"f:phase":{},"f:podIP":{},"f:podIPs":{".":{},"k:{\"ip\":\"10.65.194.15\"}":{".":{},"f:ip":{}},"k:{\"ip\":\"fd03:2b4f:588e:0:9e49:804f:3825:84c1\"}":{".":{},"f:ip":{}}},"f:startTime":{}}},"subresource":"status"},{"manager":"multus","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:56:44Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{"f:k8s.v1.cni.cncf.io/network-status":{},"f:k8s.v1.cni.cncf.io/networks-status":{}}}},"subresource":"status"}]},"spec":{"volumes":[{"name":"docker-socket","hostPath":{"path":"/var/run/dind/henbj71/docker.sock","type":"Socket"}},{"name":"docker-config","secret":{"secretName":"binder-build-docker-config","defaultMode":420}},{"name":"kube-api-access-wnwc4","projected":{"sources":[{"serviceAccountToken":{"expirationSeconds":3607,"path":"token"}},{"configMap":{"name":"kube-root-ca.crt","items":[{"key":"ca.crt","path":"ca.crt"}]}},{"downwardAPI":{"items":[{"path":"namespace","fieldRef":{"apiVersion":"v1","fieldPath":"metadata.namespace"}}]}}],"defaultMode":420}}],"containers":[{"name":"builder","image":"quay.io/jupyterhub/repo2docker:2022.02.0","args":["jupyter-repo2docker","--ref=270a0e16ebe3c00439b72abac0f825ac3ae1809c","--image=gitlab.it.liu.se:5000/drs/binderhub/prod-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2fete335-2dbinder-768a06:270a0e16ebe3c00439b72abac0f825ac3ae1809c","--no-clean","--no-run","--json-logs","--user-name=jovyan","--user-id=1000","--push","https://gitlab.liu.se/oskho10/ete335-binder"],"resources":{"limits":{"cpu":"24","memory":"0"},"requests":{"cpu":"50m","memory":"0"}},"volumeMounts":[{"name":"docker-socket","mountPath":"/var/run/docker.sock"},{"name":"docker-config","mountPath":"/root/.docker"},{"name":"kube-api-access-wnwc4","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","imagePullPolicy":"IfNotPresent"}],"restartPolicy":"Never","terminationGracePeriodSeconds":30,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","nodeName":"lkpkb06.it.liu.se","securityContext":{},"imagePullSecrets":[{"name":"liubinderhub-secret"}],"affinity":{"podAntiAffinity":{"preferredDuringSchedulingIgnoredDuringExecution":[{"weight":100,"podAffinityTerm":{"labelSelector":{"matchLabels":{"component":"binderhub-build"}},"topologyKey":"kubernetes.io/hostname"}}]}},"schedulerName":"default-scheduler","tolerations":[{"key":"hub.jupyter.org/dedicated","operator":"Equal","value":"user","effect":"NoSchedule"},{"key":"hub.jupyter.org_dedicated","operator":"Equal","value":"user","effect":"NoSchedule"},{"key":"node.kubernetes.io/not-ready","operator":"Exists","effect":"NoExecute","tolerationSeconds":300},{"key":"node.kubernetes.io/unreachable","operator":"Exists","effect":"NoExecute","tolerationSeconds":300}],"priority":0,"enableServiceLinks":true,"preemptionPolicy":"PreemptLowerPriority"},"status":{"phase":"Running","conditions":[{"type":"Initialized","status":"True","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:56:43Z"},{"type":"Ready","status":"True","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:56:44Z"},{"type":"ContainersReady","status":"True","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:56:44Z"},{"type":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:56:43Z"}],"hostIP":"130.236.59.185","podIP":"10.65.194.15","podIPs":[{"ip":"10.65.194.15"},{"ip":"fd03:2b4f:588e:0:9e49:804f:3825:84c1"}],"startTime":"2023-02-27T12:56:43Z","containerStatuses":[{"name":"builder","state":{"running":{"startedAt":"2023-02-27T12:56:44Z"}},"lastState":{},"ready":true,"restartCount":0,"image":"quay.io/jupyterhub/repo2docker:2022.02.0","imageID":"quay.io/jupyterhub/repo2docker@sha256:c8b592a1012ea88db342c9303adc5f04dda682293392814af9e26460738465c2","containerID":"cri-o://9837019b81be69cd0c1b2dacd4d176cf3d17ccb4f02a7d16e23e6a2e8b10c341","started":true}],"qosClass":"Burstable"}}]}
+    
+[D 230227 12:56:50 build:606] 1 build pods
+[D 230227 12:56:50 build:654] Build phase summary: {
+     "Running": 1
+    }
+[D 230227 12:56:54 auth:505] No user identified
+[D 230227 12:56:54 log:135] 200 GET /versions (@130.236.59.185) 1.20ms
+[D 230227 12:56:54 auth:505] No user identified
+[D 230227 12:56:54 log:135] 200 GET /versions (@130.236.59.185) 1.26ms
+[D 230227 12:56:59 auth:505] No user identified
+[D 230227 12:56:59 log:135] 200 GET /versions (@130.236.59.185) 0.97ms
+[D 230227 12:56:59 auth:505] No user identified
+[D 230227 12:56:59 log:135] 200 GET /versions (@130.236.59.185) 1.09ms
+[D 230227 12:57:04 auth:505] No user identified
+[D 230227 12:57:04 log:135] 200 GET /versions (@130.236.59.185) 1.12ms
+[D 230227 12:57:04 auth:505] No user identified
+[D 230227 12:57:04 log:135] 200 GET /versions (@130.236.59.185) 1.19ms
+[D 230227 12:57:09 auth:505] No user identified
+[D 230227 12:57:09 log:135] 200 GET /versions (@130.236.59.185) 1.12ms
+[D 230227 12:57:09 auth:505] No user identified
+[D 230227 12:57:09 log:135] 200 GET /versions (@130.236.59.185) 1.20ms
+[D 230227 12:57:14 auth:505] No user identified
+[D 230227 12:57:14 log:135] 200 GET /versions (@130.236.59.185) 1.16ms
+[D 230227 12:57:14 auth:505] No user identified
+[D 230227 12:57:14 log:135] 200 GET /versions (@130.236.59.185) 1.26ms
+[I 230227 12:57:19 build:554] Finished streaming logs of build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2
+[D 230227 12:57:19 builder:482] task completed: None
+[D 230227 12:57:19 auth:505] No user identified
+[D 230227 12:57:19 log:135] 200 GET /versions (@130.236.59.185) 1.30ms
+[D 230227 12:57:19 auth:505] No user identified
+[D 230227 12:57:19 log:135] 200 GET /versions (@130.236.59.185) 1.23ms
+[D 230227 12:57:20 rest:219] response body: {"kind":"Pod","apiVersion":"v1","metadata":{"name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2","namespace":"henbj71-binderhub","uid":"1f530abd-892f-48dd-9ca3-1766a6e07f68","resourceVersion":"2360492983","creationTimestamp":"2023-02-27T12:56:43Z","deletionTimestamp":"2023-02-27T12:57:20Z","deletionGracePeriodSeconds":0,"labels":{"component":"binderhub-build","name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2"},"annotations":{"binder-repo":"https://gitlab.liu.se/oskho10/ete335-binder","cni.projectcalico.org/containerID":"e6bb8de8b8c353534a7b7100e7591a17c8622a20415b6be199d83344c4bf4a70","cni.projectcalico.org/podIP":"","cni.projectcalico.org/podIPs":"","k8s.v1.cni.cncf.io/network-status":"[{\n    \"name\": \"k8s-pod-network\",\n    \"ips\": [\n        \"10.65.194.15\",\n        \"fd03:2b4f:588e:0:9e49:804f:3825:84c1\"\n    ],\n    \"default\": true,\n    \"dns\": {}\n}]","k8s.v1.cni.cncf.io/networks-status":"[{\n    \"name\": \"k8s-pod-network\",\n    \"ips\": [\n        \"10.65.194.15\",\n        \"fd03:2b4f:588e:0:9e49:804f:3825:84c1\"\n    ],\n    \"default\": true,\n    \"dns\": {}\n}]","kubernetes.io/limit-ranger":"LimitRanger plugin set: cpu request for container builder; cpu limit for container builder"},"managedFields":[{"manager":"Swagger-Codegen","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:56:43Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:binder-repo":{}},"f:labels":{".":{},"f:component":{},"f:name":{}}},"f:spec":{"f:affinity":{".":{},"f:podAntiAffinity":{".":{},"f:preferredDuringSchedulingIgnoredDuringExecution":{}}},"f:containers":{"k:{\"name\":\"builder\"}":{".":{},"f:args":{},"f:image":{},"f:imagePullPolicy":{},"f:name":{},"f:resources":{".":{},"f:limits":{".":{},"f:memory":{}},"f:requests":{".":{},"f:memory":{}}},"f:terminationMessagePath":{},"f:terminationMessagePolicy":{},"f:volumeMounts":{".":{},"k:{\"mountPath\":\"/root/.docker\"}":{".":{},"f:mountPath":{},"f:name":{}},"k:{\"mountPath\":\"/var/run/docker.sock\"}":{".":{},"f:mountPath":{},"f:name":{}}}}},"f:dnsPolicy":{},"f:enableServiceLinks":{},"f:restartPolicy":{},"f:schedulerName":{},"f:securityContext":{},"f:terminationGracePeriodSeconds":{},"f:tolerations":{},"f:volumes":{".":{},"k:{\"name\":\"docker-config\"}":{".":{},"f:name":{},"f:secret":{".":{},"f:defaultMode":{},"f:secretName":{}}},"k:{\"name\":\"docker-socket\"}":{".":{},"f:hostPath":{".":{},"f:path":{},"f:type":{}},"f:name":{}}}}}},{"manager":"calico","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:56:44Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{"f:cni.projectcalico.org/containerID":{},"f:cni.projectcalico.org/podIP":{},"f:cni.projectcalico.org/podIPs":{}}}},"subresource":"status"},{"manager":"multus","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:56:44Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{"f:k8s.v1.cni.cncf.io/network-status":{},"f:k8s.v1.cni.cncf.io/networks-status":{}}}},"subresource":"status"},{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:57:18Z","fieldsType":"FieldsV1","fieldsV1":{"f:status":{"f:conditions":{"k:{\"type\":\"ContainersReady\"}":{".":{},"f:lastProbeTime":{},"f:lastTransitionTime":{},"f:reason":{},"f:status":{},"f:type":{}},"k:{\"type\":\"Initialized\"}":{".":{},"f:lastProbeTime":{},"f:lastTransitionTime":{},"f:reason":{},"f:status":{},"f:type":{}},"k:{\"type\":\"Ready\"}":{".":{},"f:lastProbeTime":{},"f:lastTransitionTime":{},"f:reason":{},"f:status":{},"f:type":{}}},"f:containerStatuses":{},"f:hostIP":{},"f:phase":{},"f:podIP":{},"f:podIPs":{".":{},"k:{\"ip\":\"10.65.194.15\"}":{".":{},"f:ip":{}},"k:{\"ip\":\"fd03:2b4f:588e:0:9e49:804f:3825:84c1\"}":{".":{},"f:ip":{}}},"f:startTime":{}}},"subresource":"status"}]},"spec":{"volumes":[{"name":"docker-socket","hostPath":{"path":"/var/run/dind/henbj71/docker.sock","type":"Socket"}},{"name":"docker-config","secret":{"secretName":"binder-build-docker-config","defaultMode":420}},{"name":"kube-api-access-wnwc4","projected":{"sources":[{"serviceAccountToken":{"expirationSeconds":3607,"path":"token"}},{"configMap":{"name":"kube-root-ca.crt","items":[{"key":"ca.crt","path":"ca.crt"}]}},{"downwardAPI":{"items":[{"path":"namespace","fieldRef":{"apiVersion":"v1","fieldPath":"metadata.namespace"}}]}}],"defaultMode":420}}],"containers":[{"name":"builder","image":"quay.io/jupyterhub/repo2docker:2022.02.0","args":["jupyter-repo2docker","--ref=270a0e16ebe3c00439b72abac0f825ac3ae1809c","--image=gitlab.it.liu.se:5000/drs/binderhub/prod-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2fete335-2dbinder-768a06:270a0e16ebe3c00439b72abac0f825ac3ae1809c","--no-clean","--no-run","--json-logs","--user-name=jovyan","--user-id=1000","--push","https://gitlab.liu.se/oskho10/ete335-binder"],"resources":{"limits":{"cpu":"24","memory":"0"},"requests":{"cpu":"50m","memory":"0"}},"volumeMounts":[{"name":"docker-socket","mountPath":"/var/run/docker.sock"},{"name":"docker-config","mountPath":"/root/.docker"},{"name":"kube-api-access-wnwc4","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","imagePullPolicy":"IfNotPresent"}],"restartPolicy":"Never","terminationGracePeriodSeconds":30,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","nodeName":"lkpkb06.it.liu.se","securityContext":{},"imagePullSecrets":[{"name":"liubinderhub-secret"}],"affinity":{"podAntiAffinity":{"preferredDuringSchedulingIgnoredDuringExecution":[{"weight":100,"podAffinityTerm":{"labelSelector":{"matchLabels":{"component":"binderhub-build"}},"topologyKey":"kubernetes.io/hostname"}}]}},"schedulerName":"default-scheduler","tolerations":[{"key":"hub.jupyter.org/dedicated","operator":"Equal","value":"user","effect":"NoSchedule"},{"key":"hub.jupyter.org_dedicated","operator":"Equal","value":"user","effect":"NoSchedule"},{"key":"node.kubernetes.io/not-ready","operator":"Exists","effect":"NoExecute","tolerationSeconds":300},{"key":"node.kubernetes.io/unreachable","operator":"Exists","effect":"NoExecute","tolerationSeconds":300}],"priority":0,"enableServiceLinks":true,"preemptionPolicy":"PreemptLowerPriority"},"status":{"phase":"Succeeded","conditions":[{"type":"Initialized","status":"True","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:56:43Z","reason":"PodCompleted"},{"type":"Ready","status":"False","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:57:18Z","reason":"PodCompleted"},{"type":"ContainersReady","status":"False","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:57:18Z","reason":"PodCompleted"},{"type":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:56:43Z"}],"hostIP":"130.236.59.185","podIP":"10.65.194.15","podIPs":[{"ip":"10.65.194.15"},{"ip":"fd03:2b4f:588e:0:9e49:804f:3825:84c1"}],"startTime":"2023-02-27T12:56:43Z","containerStatuses":[{"name":"builder","state":{"terminated":{"exitCode":0,"reason":"Completed","startedAt":"2023-02-27T12:56:44Z","finishedAt":"2023-02-27T12:57:18Z","containerID":"cri-o://9837019b81be69cd0c1b2dacd4d176cf3d17ccb4f02a7d16e23e6a2e8b10c341"}},"lastState":{},"ready":false,"restartCount":0,"image":"quay.io/jupyterhub/repo2docker:2022.02.0","imageID":"quay.io/jupyterhub/repo2docker@sha256:c8b592a1012ea88db342c9303adc5f04dda682293392814af9e26460738465c2","containerID":"cri-o://9837019b81be69cd0c1b2dacd4d176cf3d17ccb4f02a7d16e23e6a2e8b10c341","started":false}],"qosClass":"Burstable"}}
+    
+[D 230227 12:57:20 rest:219] response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"pods \"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2\" not found","reason":"NotFound","details":{"name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2","kind":"pods"},"code":404}
+    
+[D 230227 12:57:20 builder:482] task completed: None
+[I 230227 12:57:21 launcher:257] Starting server oskho10-ete335-binder-sg45eul7 for user henbj71@liu.se with image gitlab.it.liu.se:5000/drs/binderhub/prod-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2fete335-2dbinder-768a06:270a0e16ebe3c00439b72abac0f825ac3ae1809c
+[D 230227 12:57:22 launcher:311] Requesting progress for henbj71@liu.se: users/henbj71@liu.se/servers/oskho10-ete335-binder-sg45eul7/progress
+[D 230227 12:57:24 auth:505] No user identified
+[D 230227 12:57:24 log:135] 200 GET /versions (@130.236.59.185) 1.78ms
+[D 230227 12:57:24 auth:505] No user identified
+[D 230227 12:57:24 log:135] 200 GET /versions (@130.236.59.185) 1.35ms
+[D 230227 12:57:29 launcher:355] https://hub.binder.edu.liu.se/user/henbj71@liu.se/oskho10-ete335-binder-sg45eul7
+[I 230227 12:57:29 builder:756] Launched https://gitlab.liu.se/oskho10/ete335-binder in 9s
+[D 230227 12:57:29 auth:505] No user identified
+[D 230227 12:57:29 log:135] 200 GET /versions (@130.236.59.185) 0.98ms
+[D 230227 12:57:29 auth:505] No user identified
+[D 230227 12:57:29 log:135] 200 GET /versions (@130.236.59.185) 1.04ms
+[D 230227 12:57:34 auth:505] No user identified
+[D 230227 12:57:34 log:135] 200 GET /versions (@130.236.59.185) 0.93ms
+[D 230227 12:57:34 auth:505] No user identified
+[D 230227 12:57:34 log:135] 200 GET /versions (@130.236.59.185) 1.02ms
+[D 230227 12:57:39 auth:505] No user identified
+[D 230227 12:57:39 log:135] 200 GET /versions (@130.236.59.185) 0.94ms
+[D 230227 12:57:39 auth:505] No user identified
+[D 230227 12:57:39 log:135] 200 GET /versions (@130.236.59.185) 1.03ms
+[D 230227 12:57:42 auth:505] No user identified
+[D 230227 12:57:42 log:135] 200 GET /metrics (@10.65.202.13) 1.49ms
+[D 230227 12:57:44 auth:505] No user identified
+[D 230227 12:57:44 log:135] 200 GET /versions (@130.236.59.185) 1.15ms
+[D 230227 12:57:44 auth:505] No user identified
+[D 230227 12:57:44 log:135] 200 GET /versions (@130.236.59.185) 1.31ms
+[D 230227 12:57:49 auth:505] No user identified
+[D 230227 12:57:49 log:135] 200 GET /versions (@130.236.59.185) 0.90ms
+[D 230227 12:57:49 auth:505] No user identified
+[D 230227 12:57:49 log:135] 200 GET /versions (@130.236.59.185) 0.98ms
+[D 230227 12:57:50 rest:219] response body: {"kind":"PodList","apiVersion":"v1","metadata":{"resourceVersion":"2360493410"},"items":[]}
+    
+[D 230227 12:57:50 build:606] 0 build pods
+[D 230227 12:57:50 build:654] Build phase summary: {}
+[D 230227 12:57:54 auth:505] No user identified
+[D 230227 12:57:54 log:135] 200 GET /versions (@130.236.59.185) 0.83ms
+[D 230227 12:57:54 auth:505] No user identified
+[D 230227 12:57:54 log:135] 200 GET /versions (@130.236.59.185) 0.96ms
+[D 230227 12:57:59 auth:505] No user identified
+[D 230227 12:57:59 log:135] 200 GET /versions (@130.236.59.185) 0.89ms
+[D 230227 12:57:59 auth:505] No user identified
+[D 230227 12:57:59 log:135] 200 GET /versions (@130.236.59.185) 0.97ms
+[D 230227 12:58:04 auth:505] No user identified
+[D 230227 12:58:04 log:135] 200 GET /versions (@130.236.59.185) 0.96ms
+[D 230227 12:58:04 auth:505] No user identified
+[D 230227 12:58:04 log:135] 200 GET /versions (@130.236.59.185) 1.01ms
+[D 230227 12:58:09 auth:505] No user identified
+[D 230227 12:58:09 log:135] 200 GET /versions (@130.236.59.185) 0.94ms
+[D 230227 12:58:09 auth:505] No user identified
+[D 230227 12:58:09 log:135] 200 GET /versions (@130.236.59.185) 1.03ms
+[D 230227 12:58:14 auth:505] No user identified
+[D 230227 12:58:14 log:135] 200 GET /versions (@130.236.59.185) 0.89ms
+[D 230227 12:58:14 auth:505] No user identified
+[D 230227 12:58:14 log:135] 200 GET /versions (@130.236.59.185) 0.99ms
+[D 230227 12:58:19 auth:505] No user identified
+[D 230227 12:58:19 log:135] 200 GET /versions (@130.236.59.185) 0.92ms
+[D 230227 12:58:19 auth:505] No user identified
+[D 230227 12:58:19 log:135] 200 GET /versions (@130.236.59.185) 1.00ms
+[D 230227 12:58:24 auth:505] No user identified
+[D 230227 12:58:24 log:135] 200 GET /versions (@130.236.59.185) 1.15ms
+[D 230227 12:58:24 auth:505] No user identified
+[D 230227 12:58:24 log:135] 200 GET /versions (@130.236.59.185) 1.21ms
+[I 230227 12:58:29 log:135] 200 GET /build/git/https%3A%2F%2Fgitlab.liu.se%2Foskho10%2Fete335-binder/HEAD?token=[secret] (henbj71@liu.se@130.236.18.90) 107486.22ms
+[D 230227 12:58:29 auth:505] No user identified
+[D 230227 12:58:29 log:135] 200 GET /versions (@130.236.59.185) 0.90ms
+[D 230227 12:58:29 auth:505] No user identified
+[D 230227 12:58:29 log:135] 200 GET /versions (@130.236.59.185) 1.00ms
+[D 230227 12:58:34 auth:505] No user identified
+[D 230227 12:58:34 log:135] 200 GET /versions (@130.236.59.185) 0.90ms
+[D 230227 12:58:34 auth:505] No user identified
+[D 230227 12:58:34 log:135] 200 GET /versions (@130.236.59.185) 1.05ms
+[D 230227 12:58:39 auth:505] No user identified
+[D 230227 12:58:39 log:135] 200 GET /versions (@130.236.59.185) 0.82ms
+[D 230227 12:58:39 auth:505] No user identified
+[D 230227 12:58:39 log:135] 200 GET /versions (@130.236.59.185) 0.90ms
+[D 230227 12:58:42 auth:505] No user identified
+[D 230227 12:58:42 log:135] 200 GET /metrics (@10.65.202.13) 1.42ms
+[D 230227 12:58:44 auth:505] No user identified
+[D 230227 12:58:44 log:135] 200 GET /versions (@130.236.59.185) 0.93ms
+[D 230227 12:58:44 auth:505] No user identified
+[D 230227 12:58:44 log:135] 200 GET /versions (@130.236.59.185) 1.00ms
+[D 230227 12:58:49 auth:505] No user identified
+[D 230227 12:58:49 log:135] 200 GET /versions (@130.236.59.185) 0.85ms
+[D 230227 12:58:49 auth:505] No user identified
+[D 230227 12:58:49 log:135] 200 GET /versions (@130.236.59.185) 0.94ms
+[D 230227 12:58:50 rest:219] response body: {"kind":"PodList","apiVersion":"v1","metadata":{"resourceVersion":"2360494230"},"items":[]}
+    
+[D 230227 12:58:50 build:606] 0 build pods
+[D 230227 12:58:50 build:654] Build phase summary: {}
+[D 230227 12:58:54 auth:505] No user identified
+[D 230227 12:58:54 log:135] 200 GET /versions (@130.236.59.185) 0.86ms
+[D 230227 12:58:54 auth:505] No user identified
+[D 230227 12:58:54 log:135] 200 GET /versions (@130.236.59.185) 0.92ms
+[D 230227 12:58:59 auth:505] No user identified
+[D 230227 12:58:59 log:135] 200 GET /versions (@130.236.59.185) 0.93ms
+[D 230227 12:58:59 auth:505] No user identified
+[D 230227 12:58:59 log:135] 200 GET /versions (@130.236.59.185) 0.99ms
+[D 230227 12:59:04 auth:863] Allowing Hub user henbj71@liu.se (all Hub users and services allowed)
+[D 230227 12:59:04 auth:748] Setting oauth cookie for 130.236.18.90: 6174f8e6-ac97-470c-b0ae-001d079c0b3a, {'path': '/', 'httponly': True, 'secure': True}
+[D 230227 12:59:04 base:75] No build token for git/https%3A%2F%2Fgitlab.liu.se%2Foskho10%2Fete335-binder/HEAD
+[D 230227 12:59:04 rest:219] response body: {"kind":"Pod","apiVersion":"v1","metadata":{"name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2","namespace":"henbj71-binderhub","uid":"c7d5770e-5f99-45da-b455-da5877a80d8a","resourceVersion":"2360494390","creationTimestamp":"2023-02-27T12:59:04Z","labels":{"component":"binderhub-build","name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2"},"annotations":{"binder-repo":"https://gitlab.liu.se/oskho10/ete335-binder","kubernetes.io/limit-ranger":"LimitRanger plugin set: cpu request for container builder; cpu limit for container builder"},"managedFields":[{"manager":"Swagger-Codegen","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:59:04Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:binder-repo":{}},"f:labels":{".":{},"f:component":{},"f:name":{}}},"f:spec":{"f:affinity":{".":{},"f:podAntiAffinity":{".":{},"f:preferredDuringSchedulingIgnoredDuringExecution":{}}},"f:containers":{"k:{\"name\":\"builder\"}":{".":{},"f:args":{},"f:image":{},"f:imagePullPolicy":{},"f:name":{},"f:resources":{".":{},"f:limits":{".":{},"f:memory":{}},"f:requests":{".":{},"f:memory":{}}},"f:terminationMessagePath":{},"f:terminationMessagePolicy":{},"f:volumeMounts":{".":{},"k:{\"mountPath\":\"/root/.docker\"}":{".":{},"f:mountPath":{},"f:name":{}},"k:{\"mountPath\":\"/var/run/docker.sock\"}":{".":{},"f:mountPath":{},"f:name":{}}}}},"f:dnsPolicy":{},"f:enableServiceLinks":{},"f:restartPolicy":{},"f:schedulerName":{},"f:securityContext":{},"f:terminationGracePeriodSeconds":{},"f:tolerations":{},"f:volumes":{".":{},"k:{\"name\":\"docker-config\"}":{".":{},"f:name":{},"f:secret":{".":{},"f:defaultMode":{},"f:secretName":{}}},"k:{\"name\":\"docker-socket\"}":{".":{},"f:hostPath":{".":{},"f:path":{},"f:type":{}},"f:name":{}}}}}}]},"spec":{"volumes":[{"name":"docker-socket","hostPath":{"path":"/var/run/dind/henbj71/docker.sock","type":"Socket"}},{"name":"docker-config","secret":{"secretName":"binder-build-docker-config","defaultMode":420}},{"name":"kube-api-access-vm955","projected":{"sources":[{"serviceAccountToken":{"expirationSeconds":3607,"path":"token"}},{"configMap":{"name":"kube-root-ca.crt","items":[{"key":"ca.crt","path":"ca.crt"}]}},{"downwardAPI":{"items":[{"path":"namespace","fieldRef":{"apiVersion":"v1","fieldPath":"metadata.namespace"}}]}}],"defaultMode":420}}],"containers":[{"name":"builder","image":"quay.io/jupyterhub/repo2docker:2022.02.0","args":["jupyter-repo2docker","--ref=270a0e16ebe3c00439b72abac0f825ac3ae1809c","--image=gitlab.it.liu.se:5000/drs/binderhub/prod-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2fete335-2dbinder-768a06:270a0e16ebe3c00439b72abac0f825ac3ae1809c","--no-clean","--no-run","--json-logs","--user-name=jovyan","--user-id=1000","--push","https://gitlab.liu.se/oskho10/ete335-binder"],"resources":{"limits":{"cpu":"24","memory":"0"},"requests":{"cpu":"50m","memory":"0"}},"volumeMounts":[{"name":"docker-socket","mountPath":"/var/run/docker.sock"},{"name":"docker-config","mountPath":"/root/.docker"},{"name":"kube-api-access-vm955","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","imagePullPolicy":"IfNotPresent"}],"restartPolicy":"Never","terminationGracePeriodSeconds":30,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","securityContext":{},"imagePullSecrets":[{"name":"liubinderhub-secret"}],"affinity":{"podAntiAffinity":{"preferredDuringSchedulingIgnoredDuringExecution":[{"weight":100,"podAffinityTerm":{"labelSelector":{"matchLabels":{"component":"binderhub-build"}},"topologyKey":"kubernetes.io/hostname"}}]}},"schedulerName":"default-scheduler","tolerations":[{"key":"hub.jupyter.org/dedicated","operator":"Equal","value":"user","effect":"NoSchedule"},{"key":"hub.jupyter.org_dedicated","operator":"Equal","value":"user","effect":"NoSchedule"},{"key":"node.kubernetes.io/not-ready","operator":"Exists","effect":"NoExecute","tolerationSeconds":300},{"key":"node.kubernetes.io/unreachable","operator":"Exists","effect":"NoExecute","tolerationSeconds":300}],"priority":0,"enableServiceLinks":true,"preemptionPolicy":"PreemptLowerPriority"},"status":{"phase":"Pending","qosClass":"Burstable"}}
+    
+[I 230227 12:59:04 build:449] Started build build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2
+[I 230227 12:59:04 build:451] Watching build pod build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2
+[D 230227 12:59:04 auth:505] No user identified
+[D 230227 12:59:04 log:135] 200 GET /versions (@130.236.59.185) 1.00ms
+[D 230227 12:59:04 auth:505] No user identified
+[D 230227 12:59:04 log:135] 200 GET /versions (@130.236.59.185) 1.07ms
+[I 230227 12:59:06 build:522] Watching logs of build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2
+[D 230227 12:59:09 auth:505] No user identified
+[D 230227 12:59:09 log:135] 200 GET /versions (@130.236.59.185) 0.95ms
+[D 230227 12:59:09 auth:505] No user identified
+[D 230227 12:59:09 log:135] 200 GET /versions (@130.236.59.185) 0.98ms
+[D 230227 12:59:14 auth:505] No user identified
+[D 230227 12:59:14 log:135] 200 GET /versions (@130.236.59.185) 0.91ms
+[D 230227 12:59:14 auth:505] No user identified
+[D 230227 12:59:14 log:135] 200 GET /versions (@130.236.59.185) 0.99ms
+[D 230227 12:59:19 auth:505] No user identified
+[D 230227 12:59:19 log:135] 200 GET /versions (@130.236.59.185) 0.89ms
+[D 230227 12:59:19 auth:505] No user identified
+[D 230227 12:59:19 log:135] 200 GET /versions (@130.236.59.185) 0.94ms
+[D 230227 12:59:24 auth:505] No user identified
+[D 230227 12:59:24 log:135] 200 GET /versions (@130.236.59.185) 1.83ms
+[D 230227 12:59:24 auth:505] No user identified
+[D 230227 12:59:24 log:135] 200 GET /versions (@130.236.59.185) 1.30ms
+[D 230227 12:59:29 auth:505] No user identified
+[D 230227 12:59:29 log:135] 200 GET /versions (@130.236.59.185) 0.90ms
+[D 230227 12:59:29 auth:505] No user identified
+[D 230227 12:59:29 log:135] 200 GET /versions (@130.236.59.185) 1.04ms
+[D 230227 12:59:34 auth:505] No user identified
+[D 230227 12:59:34 log:135] 200 GET /versions (@130.236.59.185) 0.95ms
+[D 230227 12:59:34 auth:505] No user identified
+[D 230227 12:59:34 log:135] 200 GET /versions (@130.236.59.185) 1.00ms
+[D 230227 12:59:39 auth:505] No user identified
+[D 230227 12:59:39 log:135] 200 GET /versions (@130.236.59.185) 0.84ms
+[D 230227 12:59:39 auth:505] No user identified
+[D 230227 12:59:39 log:135] 200 GET /versions (@130.236.59.185) 0.91ms
+[D 230227 12:59:42 auth:505] No user identified
+[D 230227 12:59:42 log:135] 200 GET /metrics (@10.65.202.13) 1.40ms
+[I 230227 12:59:42 build:554] Finished streaming logs of build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2
+[D 230227 12:59:42 builder:482] task completed: None
+[D 230227 12:59:44 rest:219] response body: {"kind":"Pod","apiVersion":"v1","metadata":{"name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2","namespace":"henbj71-binderhub","uid":"c7d5770e-5f99-45da-b455-da5877a80d8a","resourceVersion":"2360494875","creationTimestamp":"2023-02-27T12:59:04Z","deletionTimestamp":"2023-02-27T12:59:44Z","deletionGracePeriodSeconds":0,"labels":{"component":"binderhub-build","name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2"},"annotations":{"binder-repo":"https://gitlab.liu.se/oskho10/ete335-binder","cni.projectcalico.org/containerID":"96955e310f479d82260c0b3c2a9e2e0202db6df2f283411d13269ed641b5b99a","cni.projectcalico.org/podIP":"","cni.projectcalico.org/podIPs":"","k8s.v1.cni.cncf.io/network-status":"[{\n    \"name\": \"k8s-pod-network\",\n    \"ips\": [\n        \"10.65.175.153\",\n        \"fd03:2b4f:588e:0:8feb:2c82:bc3c:af93\"\n    ],\n    \"default\": true,\n    \"dns\": {}\n}]","k8s.v1.cni.cncf.io/networks-status":"[{\n    \"name\": \"k8s-pod-network\",\n    \"ips\": [\n        \"10.65.175.153\",\n        \"fd03:2b4f:588e:0:8feb:2c82:bc3c:af93\"\n    ],\n    \"default\": true,\n    \"dns\": {}\n}]","kubernetes.io/limit-ranger":"LimitRanger plugin set: cpu request for container builder; cpu limit for container builder"},"managedFields":[{"manager":"Swagger-Codegen","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:59:04Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:binder-repo":{}},"f:labels":{".":{},"f:component":{},"f:name":{}}},"f:spec":{"f:affinity":{".":{},"f:podAntiAffinity":{".":{},"f:preferredDuringSchedulingIgnoredDuringExecution":{}}},"f:containers":{"k:{\"name\":\"builder\"}":{".":{},"f:args":{},"f:image":{},"f:imagePullPolicy":{},"f:name":{},"f:resources":{".":{},"f:limits":{".":{},"f:memory":{}},"f:requests":{".":{},"f:memory":{}}},"f:terminationMessagePath":{},"f:terminationMessagePolicy":{},"f:volumeMounts":{".":{},"k:{\"mountPath\":\"/root/.docker\"}":{".":{},"f:mountPath":{},"f:name":{}},"k:{\"mountPath\":\"/var/run/docker.sock\"}":{".":{},"f:mountPath":{},"f:name":{}}}}},"f:dnsPolicy":{},"f:enableServiceLinks":{},"f:restartPolicy":{},"f:schedulerName":{},"f:securityContext":{},"f:terminationGracePeriodSeconds":{},"f:tolerations":{},"f:volumes":{".":{},"k:{\"name\":\"docker-config\"}":{".":{},"f:name":{},"f:secret":{".":{},"f:defaultMode":{},"f:secretName":{}}},"k:{\"name\":\"docker-socket\"}":{".":{},"f:hostPath":{".":{},"f:path":{},"f:type":{}},"f:name":{}}}}}},{"manager":"calico","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:59:05Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{"f:cni.projectcalico.org/containerID":{},"f:cni.projectcalico.org/podIP":{},"f:cni.projectcalico.org/podIPs":{}}}},"subresource":"status"},{"manager":"multus","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:59:05Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{"f:k8s.v1.cni.cncf.io/network-status":{},"f:k8s.v1.cni.cncf.io/networks-status":{}}}},"subresource":"status"},{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-02-27T12:59:42Z","fieldsType":"FieldsV1","fieldsV1":{"f:status":{"f:conditions":{"k:{\"type\":\"ContainersReady\"}":{".":{},"f:lastProbeTime":{},"f:lastTransitionTime":{},"f:reason":{},"f:status":{},"f:type":{}},"k:{\"type\":\"Initialized\"}":{".":{},"f:lastProbeTime":{},"f:lastTransitionTime":{},"f:reason":{},"f:status":{},"f:type":{}},"k:{\"type\":\"Ready\"}":{".":{},"f:lastProbeTime":{},"f:lastTransitionTime":{},"f:reason":{},"f:status":{},"f:type":{}}},"f:containerStatuses":{},"f:hostIP":{},"f:phase":{},"f:podIP":{},"f:podIPs":{".":{},"k:{\"ip\":\"10.65.175.153\"}":{".":{},"f:ip":{}},"k:{\"ip\":\"fd03:2b4f:588e:0:8feb:2c82:bc3c:af93\"}":{".":{},"f:ip":{}}},"f:startTime":{}}},"subresource":"status"}]},"spec":{"volumes":[{"name":"docker-socket","hostPath":{"path":"/var/run/dind/henbj71/docker.sock","type":"Socket"}},{"name":"docker-config","secret":{"secretName":"binder-build-docker-config","defaultMode":420}},{"name":"kube-api-access-vm955","projected":{"sources":[{"serviceAccountToken":{"expirationSeconds":3607,"path":"token"}},{"configMap":{"name":"kube-root-ca.crt","items":[{"key":"ca.crt","path":"ca.crt"}]}},{"downwardAPI":{"items":[{"path":"namespace","fieldRef":{"apiVersion":"v1","fieldPath":"metadata.namespace"}}]}}],"defaultMode":420}}],"containers":[{"name":"builder","image":"quay.io/jupyterhub/repo2docker:2022.02.0","args":["jupyter-repo2docker","--ref=270a0e16ebe3c00439b72abac0f825ac3ae1809c","--image=gitlab.it.liu.se:5000/drs/binderhub/prod-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2fete335-2dbinder-768a06:270a0e16ebe3c00439b72abac0f825ac3ae1809c","--no-clean","--no-run","--json-logs","--user-name=jovyan","--user-id=1000","--push","https://gitlab.liu.se/oskho10/ete335-binder"],"resources":{"limits":{"cpu":"24","memory":"0"},"requests":{"cpu":"50m","memory":"0"}},"volumeMounts":[{"name":"docker-socket","mountPath":"/var/run/docker.sock"},{"name":"docker-config","mountPath":"/root/.docker"},{"name":"kube-api-access-vm955","readOnly":true,"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount"}],"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","imagePullPolicy":"IfNotPresent"}],"restartPolicy":"Never","terminationGracePeriodSeconds":30,"dnsPolicy":"ClusterFirst","serviceAccountName":"default","serviceAccount":"default","nodeName":"lkpkb10.it.liu.se","securityContext":{},"imagePullSecrets":[{"name":"liubinderhub-secret"}],"affinity":{"podAntiAffinity":{"preferredDuringSchedulingIgnoredDuringExecution":[{"weight":100,"podAffinityTerm":{"labelSelector":{"matchLabels":{"component":"binderhub-build"}},"topologyKey":"kubernetes.io/hostname"}}]}},"schedulerName":"default-scheduler","tolerations":[{"key":"hub.jupyter.org/dedicated","operator":"Equal","value":"user","effect":"NoSchedule"},{"key":"hub.jupyter.org_dedicated","operator":"Equal","value":"user","effect":"NoSchedule"},{"key":"node.kubernetes.io/not-ready","operator":"Exists","effect":"NoExecute","tolerationSeconds":300},{"key":"node.kubernetes.io/unreachable","operator":"Exists","effect":"NoExecute","tolerationSeconds":300}],"priority":0,"enableServiceLinks":true,"preemptionPolicy":"PreemptLowerPriority"},"status":{"phase":"Succeeded","conditions":[{"type":"Initialized","status":"True","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:59:04Z","reason":"PodCompleted"},{"type":"Ready","status":"False","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:59:42Z","reason":"PodCompleted"},{"type":"ContainersReady","status":"False","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:59:42Z","reason":"PodCompleted"},{"type":"PodScheduled","status":"True","lastProbeTime":null,"lastTransitionTime":"2023-02-27T12:59:04Z"}],"hostIP":"130.236.59.203","podIP":"10.65.175.153","podIPs":[{"ip":"10.65.175.153"},{"ip":"fd03:2b4f:588e:0:8feb:2c82:bc3c:af93"}],"startTime":"2023-02-27T12:59:04Z","containerStatuses":[{"name":"builder","state":{"terminated":{"exitCode":0,"reason":"Completed","startedAt":"2023-02-27T12:59:06Z","finishedAt":"2023-02-27T12:59:41Z","containerID":"cri-o://6ec21e58bc291e735df3f5b414a3624dc286ca8d9b2b2b6b1de3a9c8ba46d30a"}},"lastState":{},"ready":false,"restartCount":0,"image":"quay.io/jupyterhub/repo2docker:2022.02.0","imageID":"quay.io/jupyterhub/repo2docker@sha256:c8b592a1012ea88db342c9303adc5f04dda682293392814af9e26460738465c2","containerID":"cri-o://6ec21e58bc291e735df3f5b414a3624dc286ca8d9b2b2b6b1de3a9c8ba46d30a","started":false}],"qosClass":"Burstable"}}
+    
+[D 230227 12:59:44 rest:219] response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"pods \"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2\" not found","reason":"NotFound","details":{"name":"build-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2-768a06-270-b2","kind":"pods"},"code":404}
+    
+[D 230227 12:59:44 builder:482] task completed: None
+[I 230227 12:59:44 launcher:257] Starting server oskho10-ete335-binder-ftwdj941 for user henbj71@liu.se with image gitlab.it.liu.se:5000/drs/binderhub/prod-https-3a-2f-2fgitlab-2eliu-2ese-2foskho10-2fete335-2dbinder-768a06:270a0e16ebe3c00439b72abac0f825ac3ae1809c
+[D 230227 12:59:44 auth:505] No user identified
+[D 230227 12:59:44 log:135] 200 GET /versions (@130.236.59.185) 0.91ms
+[D 230227 12:59:44 auth:505] No user identified
+[D 230227 12:59:44 log:135] 200 GET /versions (@130.236.59.185) 1.05ms
+[D 230227 12:59:45 launcher:311] Requesting progress for henbj71@liu.se: users/henbj71@liu.se/servers/oskho10-ete335-binder-ftwdj941/progress
+[D 230227 12:59:49 auth:505] No user identified
+[D 230227 12:59:49 log:135] 200 GET /versions (@130.236.59.185) 0.80ms
+[D 230227 12:59:49 auth:505] No user identified
+[D 230227 12:59:49 log:135] 200 GET /versions (@130.236.59.185) 0.88ms
+[D 230227 12:59:50 rest:219] response body: {"kind":"PodList","apiVersion":"v1","metadata":{"resourceVersion":"2360494987"},"items":[]}
+    
+[D 230227 12:59:50 build:606] 0 build pods
+[D 230227 12:59:50 build:654] Build phase summary: {}
+[D 230227 12:59:52 launcher:355] https://hub.binder.edu.liu.se/user/henbj71@liu.se/oskho10-ete335-binder-ftwdj941
+[I 230227 12:59:52 builder:756] Launched https://gitlab.liu.se/oskho10/ete335-binder in 8s
+[D 230227 12:59:54 auth:505] No user identified
+[D 230227 12:59:54 log:135] 200 GET /versions (@130.236.59.185) 0.96ms
+[D 230227 12:59:54 auth:505] No user identified
+[D 230227 12:59:54 log:135] 200 GET /versions (@130.236.59.185) 1.05ms
+[D 230227 12:59:59 auth:505] No user identified
+[D 230227 12:59:59 log:135] 200 GET /versions (@130.236.59.185) 0.86ms
+[D 230227 12:59:59 auth:505] No user identified
+[D 230227 12:59:59 log:135] 200 GET /versions (@130.236.59.185) 0.98ms
+[D 230227 13:00:04 auth:505] No user identified
+[D 230227 13:00:04 log:135] 200 GET /versions (@130.236.59.185) 0.86ms
+[D 230227 13:00:04 auth:505] No user identified
+[D 230227 13:00:04 log:135] 200 GET /versions (@130.236.59.185) 0.96ms
+[D 230227 13:00:09 auth:505] No user identified
+[D 230227 13:00:09 log:135] 200 GET /versions (@130.236.59.185) 0.89ms
+[D 230227 13:00:09 auth:505] No user identified
+[D 230227 13:00:09 log:135] 200 GET /versions (@130.236.59.185) 0.96ms
+[D 230227 13:00:14 auth:505] No user identified
+[D 230227 13:00:14 log:135] 200 GET /versions (@130.236.59.185) 0.93ms
+[D 230227 13:00:14 auth:505] No user identified
+[D 230227 13:00:14 log:135] 200 GET /versions (@130.236.59.185) 1.02ms
+[D 230227 13:00:19 auth:505] No user identified
+[D 230227 13:00:19 log:135] 200 GET /versions (@130.236.59.185) 0.89ms
+[D 230227 13:00:19 auth:505] No user identified
+[D 230227 13:00:19 log:135] 200 GET /versions (@130.236.59.185) 0.96ms
+[D 230227 13:00:24 auth:505] No user identified
+[D 230227 13:00:24 log:135] 200 GET /versions (@130.236.59.185) 0.96ms
+[D 230227 13:00:24 auth:505] No user identified
+[D 230227 13:00:24 log:135] 200 GET /versions (@130.236.59.185) 1.03ms
+[D 230227 13:00:29 auth:505] No user identified
+[D 230227 13:00:29 log:135] 200 GET /versions (@130.236.59.185) 0.91ms
+[D 230227 13:00:29 auth:505] No user identified
+[D 230227 13:00:29 log:135] 200 GET /versions (@130.236.59.185) 0.96ms
+[D 230227 13:00:34 auth:505] No user identified
+[D 230227 13:00:34 log:135] 200 GET /versions (@130.236.59.185) 0.90ms
+[D 230227 13:00:34 auth:505] No user identified
+[D 230227 13:00:34 log:135] 200 GET /versions (@130.236.59.185) 1.01ms
+[D 230227 13:00:39 auth:505] No user identified
+[D 230227 13:00:39 log:135] 200 GET /versions (@130.236.59.185) 0.87ms
+[D 230227 13:00:39 auth:505] No user identified
+[D 230227 13:00:39 log:135] 200 GET /versions (@130.236.59.185) 0.96ms
+[D 230227 13:00:42 auth:505] No user identified
+[D 230227 13:00:42 log:135] 200 GET /metrics (@10.65.202.13) 1.31ms
+[D 230227 13:00:44 auth:505] No user identified
+[D 230227 13:00:44 log:135] 200 GET /versions (@130.236.59.185) 1.36ms
+[D 230227 13:00:44 auth:505] No user identified
+[D 230227 13:00:44 log:135] 200 GET /versions (@130.236.59.185) 1.39ms
+[D 230227 13:00:49 auth:505] No user identified
+[D 230227 13:00:49 log:135] 200 GET /versions (@130.236.59.185) 1.00ms
+[D 230227 13:00:49 auth:505] No user identified
+[D 230227 13:00:49 log:135] 200 GET /versions (@130.236.59.185) 1.05ms
+[D 230227 13:00:50 rest:219] response body: {"kind":"PodList","apiVersion":"v1","metadata":{"resourceVersion":"2360496285"},"items":[]}
+    
+[D 230227 13:00:50 build:606] 0 build pods
+[D 230227 13:00:50 build:654] Build phase summary: {}
+[I 230227 13:00:52 log:135] 200 GET /build/git/https%3A%2F%2Fgitlab.liu.se%2Foskho10%2Fete335-binder/HEAD?token=[secret] (henbj71@liu.se@130.236.18.90) 107670.56ms
+[D 230227 13:00:54 auth:505] No user identified
+[D 230227 13:00:54 log:135] 200 GET /versions (@130.236.59.185) 1.27ms
+[D 230227 13:00:54 auth:505] No user identified
+[D 230227 13:00:54 log:135] 200 GET /versions (@130.236.59.185) 1.41ms
+[D 230227 13:00:59 auth:505] No user identified
+[D 230227 13:00:59 log:135] 200 GET /versions (@130.236.59.185) 0.93ms
+[D 230227 13:00:59 auth:505] No user identified
+[D 230227 13:00:59 log:135] 200 GET /versions (@130.236.59.185) 1.00ms
+[D 230227 13:01:04 auth:505] No user identified
+[D 230227 13:01:04 log:135] 200 GET /versions (@130.236.59.185) 0.96ms
+[D 230227 13:01:04 auth:505] No user identified
+[D 230227 13:01:04 log:135] 200 GET /versions (@130.236.59.185) 1.08ms
+[D 230227 13:01:09 auth:505] No user identified
+[D 230227 13:01:09 log:135] 200 GET /versions (@130.236.59.185) 0.93ms
+[D 230227 13:01:09 auth:505] No user identified
+[D 230227 13:01:09 log:135] 200 GET /versions (@130.236.59.185) 0.98ms
