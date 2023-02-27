@@ -1,0 +1,613 @@
+[D 2023-02-27 12:55:53.998 JupyterHub application:730] Looking for /usr/local/etc/jupyterhub/jupyterhub_config in /srv/jupyterhub
+Loading /usr/local/etc/jupyterhub/secret/values.yaml
+No config at /usr/local/etc/jupyterhub/existing-secret/values.yaml
+Loading extra config: 0-binderspawnermixin
+Loading extra config: 00-binder
+[D 2023-02-27 12:55:54.331 JupyterHub application:752] Loaded config file: /usr/local/etc/jupyterhub/jupyterhub_config.py
+[I 2023-02-27 12:55:54.339 JupyterHub app:2479] Running JupyterHub version 1.5.0
+[I 2023-02-27 12:55:54.339 JupyterHub app:2509] Using Authenticator: oauthenticator.azuread.AzureAdOAuthenticator-14.2.0
+[I 2023-02-27 12:55:54.339 JupyterHub app:2509] Using Spawner: builtins.BinderSpawner
+[I 2023-02-27 12:55:54.340 JupyterHub app:2509] Using Proxy: jupyterhub.proxy.ConfigurableHTTPProxy-1.5.0
+[D 2023-02-27 12:55:54.341 JupyterHub app:1721] Connecting to db: sqlite:///jupyterhub.sqlite
+[D 2023-02-27 12:55:54.374 JupyterHub orm:784] Stamping empty database with alembic revision 4dc2d5a8c53c
+[I 2023-02-27 12:55:54.378 alembic.runtime.migration migration:164] Context impl SQLiteImpl.
+[I 2023-02-27 12:55:54.378 alembic.runtime.migration migration:167] Will assume non-transactional DDL.
+[I 2023-02-27 12:55:54.617 alembic.runtime.migration migration:556] Running stamp_revision  -> 4dc2d5a8c53c
+[D 2023-02-27 12:55:54.617 alembic.runtime.migration migration:752] new branch insert 4dc2d5a8c53c
+[D 2023-02-27 12:55:54.795 JupyterHub orm:784] Stamping empty database with alembic revision 4dc2d5a8c53c
+[I 2023-02-27 12:55:54.796 alembic.runtime.migration migration:164] Context impl SQLiteImpl.
+[I 2023-02-27 12:55:54.796 alembic.runtime.migration migration:167] Will assume non-transactional DDL.
+[I 2023-02-27 12:55:58.991 JupyterHub app:1858] Not using allowed_users. Any authenticated user will be allowed.
+[I 2023-02-27 12:55:59.658 JupyterHub provider:574] Creating oauth client 6174f8e6-ac97-470c-b0ae-001d079c0b3a
+[I 2023-02-27 12:55:59.841 JupyterHub app:1981] Adding API token for service: binder
+[D 2023-02-27 12:55:59.963 JupyterHub app:2010] Purging expired APITokens
+[D 2023-02-27 12:55:59.965 JupyterHub app:2010] Purging expired OAuthAccessTokens
+[D 2023-02-27 12:55:59.967 JupyterHub app:2010] Purging expired OAuthCodes
+[W 2023-02-27 12:55:59.971 JupyterHub app:2363] Allowing service binder to complete OAuth without confirmation on an authorization web page
+[D 2023-02-27 12:55:59.977 JupyterHub app:2133] Initializing spawners
+[D 2023-02-27 12:55:59.978 JupyterHub app:2266] Loaded users:
+    
+[I 2023-02-27 12:55:59.979 JupyterHub app:2546] Initialized 0 spawners in 0.002 seconds
+[I 2023-02-27 12:55:59.980 JupyterHub app:2758] Not starting proxy
+[D 2023-02-27 12:55:59.981 JupyterHub proxy:832] Proxy: Fetching GET http://proxy-api:8001/api/routes
+[D 2023-02-27 12:55:59.989 JupyterHub proxy:905] Omitting non-jupyterhub route '/'
+[I 2023-02-27 12:55:59.990 JupyterHub app:2794] Hub API listening on http://:8081/hub/
+[I 2023-02-27 12:55:59.990 JupyterHub app:2796] Private Hub API connect url http://hub:8081/hub/
+[I 2023-02-27 12:55:59.990 JupyterHub app:2809] Starting managed service cull-idle
+[I 2023-02-27 12:55:59.990 JupyterHub service:339] Starting service 'cull-idle': ['python3', '-m', 'jupyterhub_idle_culler', '--url=http://localhost:8081/hub/api', '--timeout=7200', '--cull-every=60', '--concurrency=10', '--remove-named-servers']
+[I 2023-02-27 12:55:59.993 JupyterHub service:121] Spawning python3 -m jupyterhub_idle_culler --url=http://localhost:8081/hub/api --timeout=7200 --cull-every=60 --concurrency=10 --remove-named-servers
+[D 2023-02-27 12:56:00.000 JupyterHub spawner:1179] Polling subprocess every 30s
+[I 2023-02-27 12:56:00.001 JupyterHub app:2818] Adding external service binder
+[D 2023-02-27 12:56:00.001 JupyterHub proxy:342] Fetching routes to check
+[D 2023-02-27 12:56:00.001 JupyterHub proxy:832] Proxy: Fetching GET http://proxy-api:8001/api/routes
+[D 2023-02-27 12:56:00.003 JupyterHub proxy:905] Omitting non-jupyterhub route '/'
+[I 2023-02-27 12:56:00.004 JupyterHub proxy:347] Checking routes
+[I 2023-02-27 12:56:00.004 JupyterHub proxy:432] Adding route for Hub: / => http://hub:8081
+[D 2023-02-27 12:56:00.004 JupyterHub proxy:832] Proxy: Fetching POST http://proxy-api:8001/api/routes/
+[I 2023-02-27 12:56:00.006 JupyterHub app:2869] JupyterHub is now running at http://:8000
+[D 2023-02-27 12:56:00.007 JupyterHub app:2472] It took 6.014 seconds for the Hub to start
+[D 2023-02-27 12:56:00.105 JupyterHub base:283] Recording first activity for <APIToken('5691...', service='cull-idle')>
+[I 2023-02-27 12:56:00.750 JupyterHub log:189] 200 GET /hub/api/users (cull-idle@::1) 649.09ms
+[D 2023-02-27 12:56:00.752 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.85ms
+[D 2023-02-27 12:56:02.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.67ms
+[D 2023-02-27 12:56:04.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 12:56:06.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.64ms
+[D 2023-02-27 12:56:10.514 JupyterHub base:1285] No template for 403
+[W 2023-02-27 12:56:10.541 JupyterHub log:189] 403 GET /hub/metrics (@10.65.202.13) 28.45ms
+[D 2023-02-27 12:56:10.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 12:56:12.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.63ms
+[D 2023-02-27 12:56:14.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.63ms
+[D 2023-02-27 12:56:16.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:56:18.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.66ms
+[D 2023-02-27 12:56:20.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 12:56:22.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 12:56:24.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:56:26.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.66ms
+[W 2023-02-27 12:56:28.449 JupyterHub base:390] Invalid or expired cookie token
+[I 2023-02-27 12:56:28.450 JupyterHub log:189] 302 GET /hub/home -> /hub/login?next=%2Fhub%2Fhome (@130.236.18.90) 1.54ms
+[I 2023-02-27 12:56:28.466 JupyterHub log:189] 302 GET /hub/login?next=%2Fhub%2Fhome -> /hub/oauth_login?next=%2Fhub%2Fhome (@130.236.18.90) 1.08ms
+[I 2023-02-27 12:56:28.481 JupyterHub oauth2:111] OAuth redirect: 'https://hub.binder.edu.liu.se/hub/oauth_callback'
+[D 2023-02-27 12:56:28.481 JupyterHub base:526] Setting cookie oauthenticator-state: {'httponly': True, 'expires_days': 1}
+[I 2023-02-27 12:56:28.482 JupyterHub log:189] 302 GET /hub/oauth_login?next=%2Fhub%2Fhome -> https://login.microsoftonline.com/913f18ec-7f26-4c5f-a816-784fe9a58edd/oauth2/authorize?response_type=code&redirect_uri=https%3A%2F%2Fhub.binder.edu.liu.se%2Fhub%2Foauth_callback&client_id=5d07725f-e78b-4cf8-bf9c-df7df65b34bb&state=[secret] (@130.236.18.90) 1.37ms
+[D 2023-02-27 12:56:28.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.45ms
+[D 2023-02-27 12:56:29.442 JupyterHub base:530] Setting cookie for henbj71@liu.se: jupyterhub-hub-login
+[D 2023-02-27 12:56:29.442 JupyterHub base:526] Setting cookie jupyterhub-hub-login: {'httponly': True, 'path': '/hub/'}
+[I 2023-02-27 12:56:29.442 JupyterHub base:762] User logged in: henbj71@liu.se
+[I 2023-02-27 12:56:29.443 JupyterHub log:189] 302 GET /hub/oauth_callback?code=[secret]&state=[secret]&session_state=[secret] -> /hub/home (@130.236.18.90) 578.14ms
+[D 2023-02-27 12:56:29.459 JupyterHub base:283] Recording first activity for <User(henbj71@liu.se 0/1 running)>
+[D 2023-02-27 12:56:29.615 JupyterHub user:317] Creating <class 'BinderSpawner'> for henbj71@liu.se:
+[D 2023-02-27 12:56:29.619 JupyterHub spawner:194] Starting executor thread pool with 160 workers
+[I 2023-02-27 12:56:29.632 JupyterHub reflector:275] watching for pods with label selector='component=singleuser-server' in namespace henbj71-binderhub
+[D 2023-02-27 12:56:29.634 JupyterHub reflector:282] Connecting pods watcher
+[I 2023-02-27 12:56:29.647 JupyterHub reflector:275] watching for events with field selector='involvedObject.kind=Pod' in namespace henbj71-binderhub
+[D 2023-02-27 12:56:29.649 JupyterHub reflector:282] Connecting events watcher
+[I 2023-02-27 12:56:29.680 JupyterHub log:189] 200 GET /hub/home (henbj71@liu.se@130.236.18.90) 222.45ms
+[E 2023-02-27 12:56:29.686 JupyterHub reflector:350] Error when watching resources, retrying in 0.2s
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.8/dist-packages/kubespawner/reflector.py", line 308, in _watch_and_update
+        for watch_event in w.stream(method, **watch_args):
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/watch/watch.py", line 163, in stream
+        resp = func(*args, **kwargs)
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14825, in list_namespaced_event
+        return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14936, in list_namespaced_event_with_http_info
+        return self.api_client.call_api(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 348, in call_api
+        return self.__call_api(resource_path, method,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 180, in __call_api
+        response_data = self.request(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 373, in request
+        return self.rest_client.GET(url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 239, in GET
+        return self.request("GET", url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 233, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.exceptions.ApiException: (403)
+    Reason: Forbidden
+    HTTP response headers: HTTPHeaderDict({'Audit-Id': '889c6957-e66d-42af-80f4-3d4201705c64', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'd3f9865e-a510-4abb-b487-8c307537656e', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'd8eb5025-2f6f-4167-841b-6cc09cbf22f2', 'Date': 'Mon, 27 Feb 2023 12:56:29 GMT', 'Content-Length': '309'})
+    HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \\"system:serviceaccount:henbj71-binderhub:default\\" cannot watch resource \\"events\\" in API group \\"\\" in the namespace \\"henbj71-binderhub\\"","reason":"Forbidden","details":{"kind":"events"},"code":403}\n'
+    
+    
+[I 2023-02-27 12:56:29.722 JupyterHub log:189] 200 GET /hub/token (henbj71@liu.se@130.236.18.90) 14.81ms
+[D 2023-02-27 12:56:29.857 JupyterHub log:189] 200 GET /hub/static/js/token.js?v=20230227125559 (@130.236.18.90) 1.22ms
+[D 2023-02-27 12:56:29.893 JupyterHub reflector:282] Connecting events watcher
+[E 2023-02-27 12:56:29.909 JupyterHub reflector:350] Error when watching resources, retrying in 0.4s
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.8/dist-packages/kubespawner/reflector.py", line 308, in _watch_and_update
+        for watch_event in w.stream(method, **watch_args):
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/watch/watch.py", line 163, in stream
+        resp = func(*args, **kwargs)
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14825, in list_namespaced_event
+        return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14936, in list_namespaced_event_with_http_info
+        return self.api_client.call_api(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 348, in call_api
+        return self.__call_api(resource_path, method,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 180, in __call_api
+        response_data = self.request(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 373, in request
+        return self.rest_client.GET(url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 239, in GET
+        return self.request("GET", url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 233, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.exceptions.ApiException: (403)
+    Reason: Forbidden
+    HTTP response headers: HTTPHeaderDict({'Audit-Id': '8483b7a1-36e5-4343-9541-46dead3e11de', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'd3f9865e-a510-4abb-b487-8c307537656e', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'd8eb5025-2f6f-4167-841b-6cc09cbf22f2', 'Date': 'Mon, 27 Feb 2023 12:56:29 GMT', 'Content-Length': '309'})
+    HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \\"system:serviceaccount:henbj71-binderhub:default\\" cannot watch resource \\"events\\" in API group \\"\\" in the namespace \\"henbj71-binderhub\\"","reason":"Forbidden","details":{"kind":"events"},"code":403}\n'
+    
+    
+[D 2023-02-27 12:56:29.947 JupyterHub log:189] 200 GET /hub/static/js/jhapi.js?v=20230227125559 (@130.236.18.90) 0.77ms
+[D 2023-02-27 12:56:29.949 JupyterHub log:189] 200 GET /hub/static/components/moment/moment.js?v=20230227125559 (@130.236.18.90) 1.37ms
+[D 2023-02-27 12:56:30.027 JupyterHub log:189] 200 GET /hub/static/js/utils.js?v=20230227125559 (@130.236.18.90) 0.62ms
+[D 2023-02-27 12:56:30.310 JupyterHub reflector:282] Connecting events watcher
+[E 2023-02-27 12:56:30.332 JupyterHub reflector:350] Error when watching resources, retrying in 0.8s
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.8/dist-packages/kubespawner/reflector.py", line 308, in _watch_and_update
+        for watch_event in w.stream(method, **watch_args):
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/watch/watch.py", line 163, in stream
+        resp = func(*args, **kwargs)
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14825, in list_namespaced_event
+        return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14936, in list_namespaced_event_with_http_info
+        return self.api_client.call_api(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 348, in call_api
+        return self.__call_api(resource_path, method,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 180, in __call_api
+        response_data = self.request(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 373, in request
+        return self.rest_client.GET(url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 239, in GET
+        return self.request("GET", url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 233, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.exceptions.ApiException: (403)
+    Reason: Forbidden
+    HTTP response headers: HTTPHeaderDict({'Audit-Id': '1a28f0d7-1760-4397-987e-86e19baac75e', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'd3f9865e-a510-4abb-b487-8c307537656e', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'd8eb5025-2f6f-4167-841b-6cc09cbf22f2', 'Date': 'Mon, 27 Feb 2023 12:56:30 GMT', 'Content-Length': '309'})
+    HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \\"system:serviceaccount:henbj71-binderhub:default\\" cannot watch resource \\"events\\" in API group \\"\\" in the namespace \\"henbj71-binderhub\\"","reason":"Forbidden","details":{"kind":"events"},"code":403}\n'
+    
+    
+[D 2023-02-27 12:56:30.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.63ms
+[D 2023-02-27 12:56:31.132 JupyterHub reflector:282] Connecting events watcher
+[E 2023-02-27 12:56:31.152 JupyterHub reflector:350] Error when watching resources, retrying in 1.6s
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.8/dist-packages/kubespawner/reflector.py", line 308, in _watch_and_update
+        for watch_event in w.stream(method, **watch_args):
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/watch/watch.py", line 163, in stream
+        resp = func(*args, **kwargs)
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14825, in list_namespaced_event
+        return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14936, in list_namespaced_event_with_http_info
+        return self.api_client.call_api(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 348, in call_api
+        return self.__call_api(resource_path, method,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 180, in __call_api
+        response_data = self.request(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 373, in request
+        return self.rest_client.GET(url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 239, in GET
+        return self.request("GET", url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 233, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.exceptions.ApiException: (403)
+    Reason: Forbidden
+    HTTP response headers: HTTPHeaderDict({'Audit-Id': 'c7693eed-4124-471c-88cb-f68e3f828fed', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'd3f9865e-a510-4abb-b487-8c307537656e', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'd8eb5025-2f6f-4167-841b-6cc09cbf22f2', 'Date': 'Mon, 27 Feb 2023 12:56:31 GMT', 'Content-Length': '309'})
+    HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \\"system:serviceaccount:henbj71-binderhub:default\\" cannot watch resource \\"events\\" in API group \\"\\" in the namespace \\"henbj71-binderhub\\"","reason":"Forbidden","details":{"kind":"events"},"code":403}\n'
+    
+    
+[D 2023-02-27 12:56:32.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.67ms
+[D 2023-02-27 12:56:32.754 JupyterHub reflector:282] Connecting events watcher
+[E 2023-02-27 12:56:32.771 JupyterHub reflector:350] Error when watching resources, retrying in 3.2s
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.8/dist-packages/kubespawner/reflector.py", line 308, in _watch_and_update
+        for watch_event in w.stream(method, **watch_args):
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/watch/watch.py", line 163, in stream
+        resp = func(*args, **kwargs)
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14825, in list_namespaced_event
+        return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14936, in list_namespaced_event_with_http_info
+        return self.api_client.call_api(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 348, in call_api
+        return self.__call_api(resource_path, method,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 180, in __call_api
+        response_data = self.request(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 373, in request
+        return self.rest_client.GET(url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 239, in GET
+        return self.request("GET", url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 233, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.exceptions.ApiException: (403)
+    Reason: Forbidden
+    HTTP response headers: HTTPHeaderDict({'Audit-Id': '1b80bded-575c-4492-b527-e017c1565b50', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'd3f9865e-a510-4abb-b487-8c307537656e', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'd8eb5025-2f6f-4167-841b-6cc09cbf22f2', 'Date': 'Mon, 27 Feb 2023 12:56:32 GMT', 'Content-Length': '309'})
+    HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \\"system:serviceaccount:henbj71-binderhub:default\\" cannot watch resource \\"events\\" in API group \\"\\" in the namespace \\"henbj71-binderhub\\"","reason":"Forbidden","details":{"kind":"events"},"code":403}\n'
+    
+    
+[I 2023-02-27 12:56:33.711 JupyterHub users:364] User henbj71@liu.se requested new API token
+[I 2023-02-27 12:56:33.713 JupyterHub log:189] 200 POST /hub/api/users/henbj71%40liu.se/tokens (henbj71@liu.se@130.236.18.90) 253.51ms
+[D 2023-02-27 12:56:34.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.65ms
+[D 2023-02-27 12:56:35.975 JupyterHub reflector:282] Connecting events watcher
+[E 2023-02-27 12:56:35.992 JupyterHub reflector:350] Error when watching resources, retrying in 6.4s
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.8/dist-packages/kubespawner/reflector.py", line 308, in _watch_and_update
+        for watch_event in w.stream(method, **watch_args):
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/watch/watch.py", line 163, in stream
+        resp = func(*args, **kwargs)
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14825, in list_namespaced_event
+        return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14936, in list_namespaced_event_with_http_info
+        return self.api_client.call_api(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 348, in call_api
+        return self.__call_api(resource_path, method,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 180, in __call_api
+        response_data = self.request(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 373, in request
+        return self.rest_client.GET(url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 239, in GET
+        return self.request("GET", url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 233, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.exceptions.ApiException: (403)
+    Reason: Forbidden
+    HTTP response headers: HTTPHeaderDict({'Audit-Id': '025f0a41-2433-41b9-9b18-fd01d173c7e9', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'd3f9865e-a510-4abb-b487-8c307537656e', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'd8eb5025-2f6f-4167-841b-6cc09cbf22f2', 'Date': 'Mon, 27 Feb 2023 12:56:35 GMT', 'Content-Length': '309'})
+    HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \\"system:serviceaccount:henbj71-binderhub:default\\" cannot watch resource \\"events\\" in API group \\"\\" in the namespace \\"henbj71-binderhub\\"","reason":"Forbidden","details":{"kind":"events"},"code":403}\n'
+    
+    
+[D 2023-02-27 12:56:36.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 12:56:38.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.63ms
+[D 2023-02-27 12:56:39.651 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:56:39.651 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:56:40.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 12:56:42.364 JupyterHub base:283] Recording first activity for <APIToken('503e...', service='binder')>
+[D 2023-02-27 12:56:42.399 JupyterHub reflector:282] Connecting events watcher
+[E 2023-02-27 12:56:42.417 JupyterHub reflector:350] Error when watching resources, retrying in 12.8s
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.8/dist-packages/kubespawner/reflector.py", line 308, in _watch_and_update
+        for watch_event in w.stream(method, **watch_args):
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/watch/watch.py", line 163, in stream
+        resp = func(*args, **kwargs)
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14825, in list_namespaced_event
+        return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14936, in list_namespaced_event_with_http_info
+        return self.api_client.call_api(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 348, in call_api
+        return self.__call_api(resource_path, method,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 180, in __call_api
+        response_data = self.request(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 373, in request
+        return self.rest_client.GET(url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 239, in GET
+        return self.request("GET", url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 233, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.exceptions.ApiException: (403)
+    Reason: Forbidden
+    HTTP response headers: HTTPHeaderDict({'Audit-Id': 'ecd03477-8157-451b-889a-fe64adcf0470', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'd3f9865e-a510-4abb-b487-8c307537656e', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'd8eb5025-2f6f-4167-841b-6cc09cbf22f2', 'Date': 'Mon, 27 Feb 2023 12:56:42 GMT', 'Content-Length': '309'})
+    HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \\"system:serviceaccount:henbj71-binderhub:default\\" cannot watch resource \\"events\\" in API group \\"\\" in the namespace \\"henbj71-binderhub\\"","reason":"Forbidden","details":{"kind":"events"},"code":403}\n'
+    
+    
+[I 2023-02-27 12:56:43.045 JupyterHub log:189] 200 GET /hub/api/authorizations/token/[secret] (binder@130.236.18.90) 685.96ms
+[D 2023-02-27 12:56:43.046 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.59ms
+[D 2023-02-27 12:56:44.604 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.81ms
+[D 2023-02-27 12:56:46.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 12:56:48.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.68ms
+[D 2023-02-27 12:56:49.660 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:56:49.660 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:56:50.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.68ms
+[D 2023-02-27 12:56:52.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 12:56:54.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.68ms
+[D 2023-02-27 12:56:55.231 JupyterHub reflector:282] Connecting events watcher
+[E 2023-02-27 12:56:55.339 JupyterHub reflector:350] Error when watching resources, retrying in 25.6s
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.8/dist-packages/kubespawner/reflector.py", line 308, in _watch_and_update
+        for watch_event in w.stream(method, **watch_args):
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/watch/watch.py", line 163, in stream
+        resp = func(*args, **kwargs)
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14825, in list_namespaced_event
+        return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14936, in list_namespaced_event_with_http_info
+        return self.api_client.call_api(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 348, in call_api
+        return self.__call_api(resource_path, method,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 180, in __call_api
+        response_data = self.request(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 373, in request
+        return self.rest_client.GET(url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 239, in GET
+        return self.request("GET", url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 233, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.exceptions.ApiException: (403)
+    Reason: Forbidden
+    HTTP response headers: HTTPHeaderDict({'Audit-Id': '474d370b-aef2-407d-a023-d87e7e715f91', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'd3f9865e-a510-4abb-b487-8c307537656e', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'd8eb5025-2f6f-4167-841b-6cc09cbf22f2', 'Date': 'Mon, 27 Feb 2023 12:56:55 GMT', 'Content-Length': '309'})
+    HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \\"system:serviceaccount:henbj71-binderhub:default\\" cannot watch resource \\"events\\" in API group \\"\\" in the namespace \\"henbj71-binderhub\\"","reason":"Forbidden","details":{"kind":"events"},"code":403}\n'
+    
+    
+[D 2023-02-27 12:56:56.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 12:56:58.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 12:56:59.668 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:56:59.668 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:57:00.007 JupyterHub proxy:832] Proxy: Fetching GET http://proxy-api:8001/api/routes
+[I 2023-02-27 12:57:00.011 JupyterHub proxy:347] Checking routes
+[I 2023-02-27 12:57:00.479 JupyterHub log:189] 200 GET /hub/api/users (cull-idle@::1) 379.53ms
+[D 2023-02-27 12:57:00.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.77ms
+[D 2023-02-27 12:57:02.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 12:57:04.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 12:57:06.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 12:57:08.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.65ms
+[D 2023-02-27 12:57:09.677 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:57:09.677 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:57:10.514 JupyterHub base:1285] No template for 403
+[W 2023-02-27 12:57:10.514 JupyterHub log:189] 403 GET /hub/metrics (@10.65.202.13) 1.60ms
+[D 2023-02-27 12:57:10.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.77ms
+[D 2023-02-27 12:57:12.604 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.63ms
+[D 2023-02-27 12:57:14.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.66ms
+[D 2023-02-27 12:57:16.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.68ms
+[D 2023-02-27 12:57:18.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 12:57:19.686 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:57:19.686 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:57:20.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.74ms
+[D 2023-02-27 12:57:20.964 JupyterHub reflector:282] Connecting events watcher
+[E 2023-02-27 12:57:20.982 JupyterHub reflector:346] Watching resources never recovered, giving up
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.8/dist-packages/kubespawner/reflector.py", line 308, in _watch_and_update
+        for watch_event in w.stream(method, **watch_args):
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/watch/watch.py", line 163, in stream
+        resp = func(*args, **kwargs)
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14825, in list_namespaced_event
+        return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api/core_v1_api.py", line 14936, in list_namespaced_event_with_http_info
+        return self.api_client.call_api(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 348, in call_api
+        return self.__call_api(resource_path, method,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 180, in __call_api
+        response_data = self.request(
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/api_client.py", line 373, in request
+        return self.rest_client.GET(url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 239, in GET
+        return self.request("GET", url,
+      File "/usr/local/lib/python3.8/dist-packages/kubernetes/client/rest.py", line 233, in request
+        raise ApiException(http_resp=r)
+    kubernetes.client.exceptions.ApiException: (403)
+    Reason: Forbidden
+    HTTP response headers: HTTPHeaderDict({'Audit-Id': '3e0ac025-2fa7-41a0-addb-b3a9ef28db04', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'd3f9865e-a510-4abb-b487-8c307537656e', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'd8eb5025-2f6f-4167-841b-6cc09cbf22f2', 'Date': 'Mon, 27 Feb 2023 12:57:20 GMT', 'Content-Length': '309'})
+    HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \\"system:serviceaccount:henbj71-binderhub:default\\" cannot watch resource \\"events\\" in API group \\"\\" in the namespace \\"henbj71-binderhub\\"","reason":"Forbidden","details":{"kind":"events"},"code":403}\n'
+    
+    
+[C 2023-02-27 12:57:20.982 JupyterHub spawner:2222] Events reflector failed, halting Hub.
+[I 2023-02-27 12:57:21.223 JupyterHub log:189] 200 GET /hub/api/users/henbj71@liu.se (binder@130.236.18.90) 478.98ms
+[D 2023-02-27 12:57:21.235 JupyterHub user:317] Creating <class 'BinderSpawner'> for henbj71@liu.se:oskho10-ete335-binder-sg45eul7
+[D 2023-02-27 12:57:21.653 JupyterHub base:880] Initiating spawn for henbj71@liu.se:oskho10-ete335-binder-sg45eul7
+[D 2023-02-27 12:57:21.653 JupyterHub base:884] 0/64 concurrent spawns
+[D 2023-02-27 12:57:21.653 JupyterHub base:889] 0 active servers
+[I 2023-02-27 12:57:22.328 JupyterHub provider:574] Creating oauth client jupyterhub-user-henbj71%40liu.se-oskho10-ete335-binder-sg45eul7
+[D 2023-02-27 12:57:22.984 JupyterHub user:631] Calling Spawner.start for henbj71@liu.se:oskho10-ete335-binder-sg45eul7
+[W 2023-02-27 12:57:22.985 JupyterHub spawner:2861] Ignoring unrecognized KubeSpawner user_options: binder_launch_host, binder_persistent_request, binder_ref_url, binder_request, image, repo_url, token
+[I 2023-02-27 12:57:22.988 JupyterHub log:189] 202 POST /hub/api/users/henbj71@liu.se/servers/oskho10-ete335-binder-sg45eul7 (binder@130.236.18.90) 1759.97ms
+[I 2023-02-27 12:57:22.989 JupyterHub spawner:2302] Attempting to create pod jupyter-henbj71-40liu-2ese--oskho10-2dete335-2dbinder-2dsg45eul7, with timeout 3
+[D 2023-02-27 12:57:22.992 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 1.62ms
+[D 2023-02-27 12:57:23.007 JupyterHub spawner:2157] progress generator: jupyter-henbj71-40liu-2ese--oskho10-2dete335-2dbinder-2dsg45eul7
+[D 2023-02-27 12:57:24.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.62ms
+[D 2023-02-27 12:57:26.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.74ms
+[D 2023-02-27 12:57:27.024 JupyterHub spawner:2592] pod henbj71-binderhub/jupyter-henbj71-40liu-2ese--oskho10-2dete335-2dbinder-2dsg45eul7 events before launch: 
+[D 2023-02-27 12:57:27.520 JupyterHub spawner:1179] Polling subprocess every 30s
+[D 2023-02-27 12:57:28.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.65ms
+[I 2023-02-27 12:57:28.865 JupyterHub log:189] 200 GET /hub/api (@10.65.90.75) 0.68ms
+[D 2023-02-27 12:57:29.025 JupyterHub base:283] Recording first activity for <APIToken('09cd...', user='henbj71@liu.se')>
+[D 2023-02-27 12:57:29.421 JupyterHub users:778] Activity for user henbj71@liu.se: 2023-02-27T12:57:28.830167Z
+[D 2023-02-27 12:57:29.422 JupyterHub users:796] Activity on server henbj71@liu.se/oskho10-ete335-binder-sg45eul7: 2023-02-27T12:57:28.830167Z
+[D 2023-02-27 12:57:29.694 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:57:29.694 JupyterHub reflector:282] Connecting pods watcher
+[I 2023-02-27 12:57:29.811 JupyterHub log:189] 200 POST /hub/api/users/henbj71@liu.se/activity (henbj71@liu.se@10.65.90.75) 787.87ms
+[D 2023-02-27 12:57:29.813 JupyterHub utils:225] Server at http://10.65.90.75:8888/user/henbj71@liu.se/oskho10-ete335-binder-sg45eul7/ responded with 302
+[W 2023-02-27 12:57:29.813 JupyterHub _version:70] jupyterhub version 1.5.0 != jupyterhub-singleuser version 1.4.2. This could cause failure to authenticate and result in redirect loops!
+[I 2023-02-27 12:57:29.813 JupyterHub base:909] User henbj71@liu.se:oskho10-ete335-binder-sg45eul7 took 8.160 seconds to start
+[I 2023-02-27 12:57:29.813 JupyterHub proxy:285] Adding user henbj71@liu.se to proxy /user/henbj71@liu.se/oskho10-ete335-binder-sg45eul7/ => http://10.65.90.75:8888
+[D 2023-02-27 12:57:29.813 JupyterHub proxy:832] Proxy: Fetching POST http://proxy-api:8001/api/routes/user/henbj71@liu.se/oskho10-ete335-binder-sg45eul7
+[I 2023-02-27 12:57:29.816 JupyterHub users:677] Server henbj71@liu.se:oskho10-ete335-binder-sg45eul7 is ready
+[I 2023-02-27 12:57:29.816 JupyterHub log:189] 200 GET /hub/api/users/henbj71@liu.se/servers/oskho10-ete335-binder-sg45eul7/progress (binder@130.236.18.90) 6821.14ms
+[D 2023-02-27 12:57:30.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 12:57:32.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.63ms
+[D 2023-02-27 12:57:34.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:57:36.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.82ms
+[D 2023-02-27 12:57:38.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 12:57:39.703 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:57:39.703 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:57:40.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 12:57:42.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 12:57:44.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 12:57:46.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.68ms
+[D 2023-02-27 12:57:48.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.62ms
+[D 2023-02-27 12:57:49.713 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:57:49.713 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:57:50.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.64ms
+[D 2023-02-27 12:57:52.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.65ms
+[D 2023-02-27 12:57:54.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.68ms
+[D 2023-02-27 12:57:56.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 12:57:58.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 12:57:59.722 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:57:59.723 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:58:00.007 JupyterHub proxy:832] Proxy: Fetching GET http://proxy-api:8001/api/routes
+[I 2023-02-27 12:58:00.099 JupyterHub proxy:347] Checking routes
+[I 2023-02-27 12:58:00.311 JupyterHub log:189] 200 GET /hub/api/users (cull-idle@::1) 210.99ms
+[D 2023-02-27 12:58:00.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.67ms
+[D 2023-02-27 12:58:02.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.68ms
+[D 2023-02-27 12:58:04.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:58:06.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 12:58:08.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 12:58:09.733 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:58:09.733 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:58:10.513 JupyterHub base:1285] No template for 403
+[W 2023-02-27 12:58:10.514 JupyterHub log:189] 403 GET /hub/metrics (@10.65.202.13) 1.41ms
+[D 2023-02-27 12:58:10.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.61ms
+[D 2023-02-27 12:58:12.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:58:14.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 12:58:16.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 12:58:18.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.68ms
+[D 2023-02-27 12:58:19.741 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:58:19.742 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:58:20.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 1.02ms
+[D 2023-02-27 12:58:22.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 12:58:24.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.74ms
+[D 2023-02-27 12:58:26.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 12:58:28.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 12:58:29.751 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:58:29.751 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:58:30.604 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 12:58:32.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:58:34.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.62ms
+[D 2023-02-27 12:58:36.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.67ms
+[D 2023-02-27 12:58:38.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.65ms
+[D 2023-02-27 12:58:39.759 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:58:39.760 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:58:40.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.66ms
+[D 2023-02-27 12:58:42.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 12:58:44.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.64ms
+[D 2023-02-27 12:58:46.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 12:58:48.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.63ms
+[D 2023-02-27 12:58:49.769 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:58:49.770 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:58:50.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 12:58:52.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:58:54.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.64ms
+[D 2023-02-27 12:58:56.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.85ms
+[D 2023-02-27 12:58:58.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.85ms
+[D 2023-02-27 12:58:59.780 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:58:59.780 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:59:00.007 JupyterHub proxy:832] Proxy: Fetching GET http://proxy-api:8001/api/routes
+[I 2023-02-27 12:59:00.015 JupyterHub proxy:347] Checking routes
+[I 2023-02-27 12:59:00.259 JupyterHub log:189] 200 GET /hub/api/users (cull-idle@::1) 158.73ms
+[D 2023-02-27 12:59:00.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.77ms
+[D 2023-02-27 12:59:02.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.67ms
+[D 2023-02-27 12:59:04.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.87ms
+[D 2023-02-27 12:59:06.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:59:08.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.95ms
+[D 2023-02-27 12:59:09.791 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:59:09.791 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:59:10.518 JupyterHub base:1285] No template for 403
+[W 2023-02-27 12:59:10.519 JupyterHub log:189] 403 GET /hub/metrics (@10.65.202.13) 1.41ms
+[D 2023-02-27 12:59:10.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 12:59:12.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.74ms
+[D 2023-02-27 12:59:14.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.64ms
+[I 2023-02-27 12:59:15.507 JupyterHub log:189] 200 GET /hub/home (henbj71@liu.se@130.236.18.90) 136.18ms
+[D 2023-02-27 12:59:15.675 JupyterHub log:189] 200 GET /hub/static/js/home.js?v=20230227125559 (@130.236.18.90) 0.93ms
+[D 2023-02-27 12:59:16.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.80ms
+[D 2023-02-27 12:59:18.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 12:59:19.800 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:59:19.800 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:59:20.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 1.03ms
+[D 2023-02-27 12:59:22.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 1.03ms
+[D 2023-02-27 12:59:24.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 12:59:26.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.83ms
+[D 2023-02-27 12:59:28.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 12:59:29.809 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:59:29.809 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:59:30.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.66ms
+[D 2023-02-27 12:59:32.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.65ms
+[D 2023-02-27 12:59:34.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 12:59:36.604 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:59:38.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.74ms
+[D 2023-02-27 12:59:39.818 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:59:39.818 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 12:59:40.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:59:42.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.63ms
+[I 2023-02-27 12:59:44.388 JupyterHub log:189] 200 GET /hub/api/users/henbj71@liu.se (binder@130.236.18.90) 124.43ms
+[D 2023-02-27 12:59:44.400 JupyterHub user:317] Creating <class 'BinderSpawner'> for henbj71@liu.se:oskho10-ete335-binder-ftwdj941
+[D 2023-02-27 12:59:44.530 JupyterHub base:880] Initiating spawn for henbj71@liu.se:oskho10-ete335-binder-ftwdj941
+[D 2023-02-27 12:59:44.530 JupyterHub base:884] 0/64 concurrent spawns
+[D 2023-02-27 12:59:44.530 JupyterHub base:889] 1 active servers
+[I 2023-02-27 12:59:44.780 JupyterHub provider:574] Creating oauth client jupyterhub-user-henbj71%40liu.se-oskho10-ete335-binder-ftwdj941
+[D 2023-02-27 12:59:45.090 JupyterHub user:631] Calling Spawner.start for henbj71@liu.se:oskho10-ete335-binder-ftwdj941
+[W 2023-02-27 12:59:45.090 JupyterHub spawner:2861] Ignoring unrecognized KubeSpawner user_options: binder_launch_host, binder_persistent_request, binder_ref_url, binder_request, image, repo_url, token
+[I 2023-02-27 12:59:45.094 JupyterHub log:189] 202 POST /hub/api/users/henbj71@liu.se/servers/oskho10-ete335-binder-ftwdj941 (binder@130.236.18.90) 700.31ms
+[I 2023-02-27 12:59:45.094 JupyterHub spawner:2302] Attempting to create pod jupyter-henbj71-40liu-2ese--oskho10-2dete335-2dbinder-2dftwdj941, with timeout 3
+[D 2023-02-27 12:59:45.096 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.89ms
+[D 2023-02-27 12:59:45.113 JupyterHub spawner:2157] progress generator: jupyter-henbj71-40liu-2ese--oskho10-2dete335-2dbinder-2dftwdj941
+[D 2023-02-27 12:59:46.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:59:47.948 JupyterHub spawner:2592] pod henbj71-binderhub/jupyter-henbj71-40liu-2ese--oskho10-2dete335-2dbinder-2dftwdj941 events before launch: 
+[D 2023-02-27 12:59:48.054 JupyterHub spawner:1179] Polling subprocess every 30s
+[D 2023-02-27 12:59:48.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 12:59:49.827 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:59:49.827 JupyterHub reflector:282] Connecting pods watcher
+[I 2023-02-27 12:59:50.458 JupyterHub log:189] 200 GET /hub/api (@10.65.90.91) 0.74ms
+[D 2023-02-27 12:59:50.561 JupyterHub base:283] Recording first activity for <APIToken('8099...', user='henbj71@liu.se')>
+[D 2023-02-27 12:59:50.688 JupyterHub users:778] Activity for user henbj71@liu.se: 2023-02-27T12:59:50.425228Z
+[D 2023-02-27 12:59:50.688 JupyterHub users:796] Activity on server henbj71@liu.se/oskho10-ete335-binder-ftwdj941: 2023-02-27T12:59:50.425228Z
+[I 2023-02-27 12:59:50.811 JupyterHub log:189] 200 POST /hub/api/users/henbj71@liu.se/activity (henbj71@liu.se@10.65.90.91) 252.64ms
+[D 2023-02-27 12:59:50.813 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.64ms
+[D 2023-02-27 12:59:52.037 JupyterHub utils:225] Server at http://10.65.90.91:8888/user/henbj71@liu.se/oskho10-ete335-binder-ftwdj941/ responded with 302
+[I 2023-02-27 12:59:52.037 JupyterHub base:909] User henbj71@liu.se:oskho10-ete335-binder-ftwdj941 took 7.507 seconds to start
+[I 2023-02-27 12:59:52.037 JupyterHub proxy:285] Adding user henbj71@liu.se to proxy /user/henbj71@liu.se/oskho10-ete335-binder-ftwdj941/ => http://10.65.90.91:8888
+[D 2023-02-27 12:59:52.037 JupyterHub proxy:832] Proxy: Fetching POST http://proxy-api:8001/api/routes/user/henbj71@liu.se/oskho10-ete335-binder-ftwdj941
+[I 2023-02-27 12:59:52.041 JupyterHub users:677] Server henbj71@liu.se:oskho10-ete335-binder-ftwdj941 is ready
+[I 2023-02-27 12:59:52.041 JupyterHub log:189] 200 GET /hub/api/users/henbj71@liu.se/servers/oskho10-ete335-binder-ftwdj941/progress (binder@130.236.18.90) 6939.26ms
+[D 2023-02-27 12:59:52.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 12:59:54.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.78ms
+[D 2023-02-27 12:59:56.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.66ms
+[D 2023-02-27 12:59:58.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.74ms
+[D 2023-02-27 12:59:59.837 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 12:59:59.837 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 13:00:00.007 JupyterHub proxy:832] Proxy: Fetching GET http://proxy-api:8001/api/routes
+[I 2023-02-27 13:00:00.141 JupyterHub proxy:347] Checking routes
+[I 2023-02-27 13:00:00.294 JupyterHub log:189] 200 GET /hub/api/users (cull-idle@::1) 152.44ms
+[D 2023-02-27 13:00:00.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[W 2023-02-27 13:00:02.529 JupyterHub log:189] 403 GET /hub/api/users (@130.236.18.90) 1.98ms
+[D 2023-02-27 13:00:02.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.55ms
+[D 2023-02-27 13:00:04.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 13:00:06.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.78ms
+[D 2023-02-27 13:00:08.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 13:00:09.846 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 13:00:09.846 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 13:00:10.513 JupyterHub base:1285] No template for 403
+[W 2023-02-27 13:00:10.514 JupyterHub log:189] 403 GET /hub/metrics (@10.65.202.13) 1.72ms
+[D 2023-02-27 13:00:10.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.74ms
+[D 2023-02-27 13:00:12.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 13:00:14.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.82ms
+[D 2023-02-27 13:00:16.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 13:00:18.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 13:00:19.856 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 13:00:19.856 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 13:00:20.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.66ms
+[D 2023-02-27 13:00:22.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.66ms
+[D 2023-02-27 13:00:24.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.79ms
+[D 2023-02-27 13:00:26.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 13:00:28.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 13:00:29.867 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 13:00:29.867 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 13:00:30.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.75ms
+[D 2023-02-27 13:00:32.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 13:00:34.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 13:00:36.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.88ms
+[D 2023-02-27 13:00:38.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.69ms
+[D 2023-02-27 13:00:39.878 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 13:00:39.878 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 13:00:40.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.74ms
+[D 2023-02-27 13:00:42.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.75ms
+[D 2023-02-27 13:00:44.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 13:00:46.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.75ms
+[D 2023-02-27 13:00:48.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.74ms
+[D 2023-02-27 13:00:49.890 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 13:00:49.890 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 13:00:50.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 13:00:52.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 13:00:54.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 13:00:56.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.68ms
+[D 2023-02-27 13:00:58.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 13:00:59.900 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 13:00:59.900 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 13:01:00.007 JupyterHub proxy:832] Proxy: Fetching GET http://proxy-api:8001/api/routes
+[I 2023-02-27 13:01:00.016 JupyterHub proxy:347] Checking routes
+[I 2023-02-27 13:01:00.213 JupyterHub log:189] 200 GET /hub/api/users (cull-idle@::1) 113.81ms
+[D 2023-02-27 13:01:00.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.72ms
+[D 2023-02-27 13:01:02.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 1.08ms
+[D 2023-02-27 13:01:02.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 1.08ms
+[D 2023-02-27 13:01:04.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.71ms
+[D 2023-02-27 13:01:06.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.74ms
+[D 2023-02-27 13:01:08.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.73ms
+[D 2023-02-27 13:01:09.911 JupyterHub reflector:357] pods watcher timeout
+[D 2023-02-27 13:01:09.911 JupyterHub reflector:282] Connecting pods watcher
+[D 2023-02-27 13:01:10.513 JupyterHub base:1285] No template for 403
+[W 2023-02-27 13:01:10.514 JupyterHub log:189] 403 GET /hub/metrics (@10.65.202.13) 1.43ms
+[D 2023-02-27 13:01:10.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.70ms
+[D 2023-02-27 13:01:12.602 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.94ms
+[D 2023-02-27 13:01:12.603 JupyterHub log:189] 200 GET /hub/health (@130.236.59.203) 0.97ms
